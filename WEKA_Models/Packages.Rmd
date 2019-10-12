@@ -1,0 +1,76 @@
+---
+title: "Untitled"
+author: "Amardeep Singh"
+date: "July 10, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+```{r}
+# Installs latest version of shinysense.
+devtools::install_github('nstrayer/shinysense')
+
+# Installs latest version of keras. 
+devtools::install_github('rstudio/keras')
+
+# Make sure you have the python versions of keras/tensorflow installed on your machine.
+keras::install_keras()
+```
+```{r}
+install.packages("shiny")
+```
+```{r}
+install.packages("shinysense")
+```
+```{r}
+library(shiny)
+library(shinysense)
+library(tidyverse)
+
+ui <- fluidPage(
+  shinyviewrUI("myCamera", height = '200px'),
+  imageOutput("snapshot")
+)
+
+server <- function(input, output) {
+  #server side call of the drawr module
+  myCamera <- callModule(
+    shinyviewr, "myCamera", 
+    outputHeight = 300,
+    outputWidth = 400)
+
+  # logic for what happens after a user has drawn their values. 
+  observeEvent(myCamera(), {
+    photo <- myCamera() 
+    print(photo) #print to console for inspection
+    output$snapshot <- renderPlot({
+      plot(as.raster(photo)) # plot photo
+    })
+  })
+}
+
+# Run the application
+shinyApp(ui = ui, server = server)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
