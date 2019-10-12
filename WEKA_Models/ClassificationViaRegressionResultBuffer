@@ -1,0 +1,2215 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.ClassificationViaRegression -W weka.classifiers.trees.M5P -- -M 4.0
+Relation:     train_processed
+Instances:    7628
+Attributes:   15
+              WordCount
+              SentimentGI
+              NegativityGI
+              PositivityGI
+              SentimentHE
+              NegativityHE
+              PositivityHE
+              SentimentLM
+              NegativityLM
+              PositivityLM
+              RatioUncertaintyLM
+              SentimentQDAP
+              NegativityQDAP
+              PositivityQDAP
+              Section
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Classification via Regression
+
+Classifier for class with index 0:
+
+M5 pruned model tree:
+(using smoothed linear models)
+
+NegativityHE <= 0.01 : 
+|   SentimentHE <= 0.028 : 
+|   |   PositivityQDAP <= 0.069 : 
+|   |   |   PositivityGI <= 0.117 : LM1 (862/74.71%)
+|   |   |   PositivityGI >  0.117 : 
+|   |   |   |   WordCount <= 23.5 : LM2 (100/66.562%)
+|   |   |   |   WordCount >  23.5 : 
+|   |   |   |   |   SentimentGI <= 0.088 : 
+|   |   |   |   |   |   PositivityLM <= 0.025 : LM3 (125/73.386%)
+|   |   |   |   |   |   PositivityLM >  0.025 : 
+|   |   |   |   |   |   |   SentimentHE <= 0.009 : 
+|   |   |   |   |   |   |   |   NegativityLM <= 0.075 : 
+|   |   |   |   |   |   |   |   |   SentimentLM <= 0.037 : LM4 (10/0%)
+|   |   |   |   |   |   |   |   |   SentimentLM >  0.037 : LM5 (3/127.517%)
+|   |   |   |   |   |   |   |   NegativityLM >  0.075 : LM6 (9/85.011%)
+|   |   |   |   |   |   |   SentimentHE >  0.009 : LM7 (10/0%)
+|   |   |   |   |   SentimentGI >  0.088 : 
+|   |   |   |   |   |   NegativityLM <= 0.004 : 
+|   |   |   |   |   |   |   NegativityQDAP <= 0.01 : 
+|   |   |   |   |   |   |   |   NegativityGI <= 0.043 : 
+|   |   |   |   |   |   |   |   |   PositivityGI <= 0.127 : LM8 (10/73.282%)
+|   |   |   |   |   |   |   |   |   PositivityGI >  0.127 : LM9 (20/0%)
+|   |   |   |   |   |   |   |   NegativityGI >  0.043 : 
+|   |   |   |   |   |   |   |   |   WordCount <= 36 : LM10 (3/0%)
+|   |   |   |   |   |   |   |   |   WordCount >  36 : 
+|   |   |   |   |   |   |   |   |   |   SentimentQDAP <= 0.054 : LM11 (4/0%)
+|   |   |   |   |   |   |   |   |   |   SentimentQDAP >  0.054 : LM12 (2/0%)
+|   |   |   |   |   |   |   NegativityQDAP >  0.01 : 
+|   |   |   |   |   |   |   |   SentimentGI <= 0.162 : 
+|   |   |   |   |   |   |   |   |   SentimentLM <= 0.02 : 
+|   |   |   |   |   |   |   |   |   |   PositivityGI <= 0.15 : LM13 (6/0%)
+|   |   |   |   |   |   |   |   |   |   PositivityGI >  0.15 : LM14 (12/114.052%)
+|   |   |   |   |   |   |   |   |   SentimentLM >  0.02 : LM15 (5/0%)
+|   |   |   |   |   |   |   |   SentimentGI >  0.162 : LM16 (8/0%)
+|   |   |   |   |   |   NegativityLM >  0.004 : 
+|   |   |   |   |   |   |   NegativityGI <= 0.024 : LM17 (21/0%)
+|   |   |   |   |   |   |   NegativityGI >  0.024 : 
+|   |   |   |   |   |   |   |   WordCount <= 48 : LM18 (32/127.343%)
+|   |   |   |   |   |   |   |   WordCount >  48 : 
+|   |   |   |   |   |   |   |   |   PositivityHE <= 0.011 : 
+|   |   |   |   |   |   |   |   |   |   NegativityQDAP <= 0.038 : 
+|   |   |   |   |   |   |   |   |   |   |   NegativityQDAP <= 0.03 : LM19 (11/77.764%)
+|   |   |   |   |   |   |   |   |   |   |   NegativityQDAP >  0.03 : LM20 (4/0%)
+|   |   |   |   |   |   |   |   |   |   NegativityQDAP >  0.038 : LM21 (11/0%)
+|   |   |   |   |   |   |   |   |   PositivityHE >  0.011 : LM22 (23/0%)
+|   |   PositivityQDAP >  0.069 : LM23 (3448/62.092%)
+|   SentimentHE >  0.028 : LM24 (1205/103.205%)
+NegativityHE >  0.01 : 
+|   PositivityHE <= 0.026 : LM25 (1073/108.275%)
+|   PositivityHE >  0.026 : 
+|   |   NegativityHE <= 0.037 : LM26 (437/123.399%)
+|   |   NegativityHE >  0.037 : 
+|   |   |   PositivityLM <= 0.036 : LM27 (117/74.839%)
+|   |   |   PositivityLM >  0.036 : LM28 (57/122.545%)
+
+LM num: 1
+Section = 
+	-0 * WordCount 
+	+ 0.0014 * NegativityGI 
+	+ 0.0156 * PositivityGI 
+	+ 11.5448 * SentimentHE 
+	+ 0.019 * NegativityHE 
+	- 7.002 * PositivityHE 
+	+ 0.0025 * NegativityLM 
+	+ 0.0103 * PositivityLM 
+	+ 0.0035 * RatioUncertaintyLM 
+	- 0.0075 * NegativityQDAP 
+	- 0.855 * PositivityQDAP 
+	+ 0.1014
+
+LM num: 2
+Section = 
+	-0 * WordCount 
+	+ 0.0014 * NegativityGI 
+	+ 0.1493 * PositivityGI 
+	+ 0.071 * SentimentHE 
+	+ 0.019 * NegativityHE 
+	+ 0.0544 * PositivityHE 
+	+ 0.0025 * NegativityLM 
+	+ 0.0265 * PositivityLM 
+	+ 0.0035 * RatioUncertaintyLM 
+	- 0.0121 * NegativityQDAP 
+	+ 2.1601 * PositivityQDAP 
+	- 0.0108
+
+LM num: 3
+Section = 
+	-0.0003 * WordCount 
+	+ 0.0014 * NegativityGI 
+	+ 0.1771 * PositivityGI 
+	- 1.4745 * SentimentHE 
+	+ 0.019 * NegativityHE 
+	+ 0.9993 * PositivityHE 
+	+ 0.0998 * NegativityLM 
+	+ 0.6669 * PositivityLM 
+	+ 0.0035 * RatioUncertaintyLM 
+	- 0.0121 * NegativityQDAP 
+	+ 0.0668 * PositivityQDAP 
+	+ 0.0762
+
+LM num: 4
+Section = 
+	-0.0015 * WordCount 
+	+ 0.0014 * NegativityGI 
+	+ 0.1771 * PositivityGI 
+	- 6.9903 * SentimentHE 
+	+ 0.019 * NegativityHE 
+	+ 0.9993 * PositivityHE 
+	+ 2.0961 * SentimentLM 
+	+ 3.77 * NegativityLM 
+	+ 1.5988 * PositivityLM 
+	+ 0.0035 * RatioUncertaintyLM 
+	- 0.0121 * NegativityQDAP 
+	+ 0.0668 * PositivityQDAP 
+	+ 0.1079
+
+LM num: 5
+Section = 
+	-0.0015 * WordCount 
+	+ 0.0014 * NegativityGI 
+	+ 0.1771 * PositivityGI 
+	- 6.9903 * SentimentHE 
+	+ 0.019 * NegativityHE 
+	+ 0.9993 * PositivityHE 
+	+ 2.3284 * SentimentLM 
+	+ 3.77 * NegativityLM 
+	+ 1.5988 * PositivityLM 
+	+ 0.0035 * RatioUncertaintyLM 
+	- 0.0121 * NegativityQDAP 
+	+ 0.0668 * PositivityQDAP 
+	+ 0.1273
+
+LM num: 6
+Section = 
+	-0.0017 * WordCount 
+	+ 0.0014 * NegativityGI 
+	+ 0.1771 * PositivityGI 
+	- 6.9903 * SentimentHE 
+	+ 0.019 * NegativityHE 
+	+ 0.9993 * PositivityHE 
+	+ 1.3219 * SentimentLM 
+	+ 3.77 * NegativityLM 
+	+ 1.5988 * PositivityLM 
+	+ 0.0035 * RatioUncertaintyLM 
+	- 0.0121 * NegativityQDAP 
+	+ 0.0668 * PositivityQDAP 
+	+ 0.2327
+
+LM num: 7
+Section = 
+	-0.0006 * WordCount 
+	+ 0.0014 * NegativityGI 
+	+ 0.1771 * PositivityGI 
+	- 9.1505 * SentimentHE 
+	+ 0.019 * NegativityHE 
+	+ 0.9993 * PositivityHE 
+	+ 3.7892 * SentimentLM 
+	+ 5.4392 * NegativityLM 
+	+ 1.5988 * PositivityLM 
+	+ 0.0035 * RatioUncertaintyLM 
+	- 0.0121 * NegativityQDAP 
+	+ 0.0668 * PositivityQDAP 
+	- 0.0302
+
+LM num: 8
+Section = 
+	0.0004 * WordCount 
+	+ 0.2028 * SentimentGI 
+	+ 1.184 * NegativityGI 
+	+ 0.1683 * PositivityGI 
+	- 0.8787 * SentimentHE 
+	+ 0.019 * NegativityHE 
+	+ 0.9235 * PositivityHE 
+	- 1.5332 * SentimentLM 
+	+ 0.0025 * NegativityLM 
+	+ 0.1823 * PositivityLM 
+	+ 0.0035 * RatioUncertaintyLM 
+	+ 4.258 * SentimentQDAP 
+	+ 2.3061 * NegativityQDAP 
+	+ 0.0668 * PositivityQDAP 
+	- 0.0834
+
+LM num: 9
+Section = 
+	0.0004 * WordCount 
+	+ 0.2028 * SentimentGI 
+	+ 1.184 * NegativityGI 
+	+ 0.1683 * PositivityGI 
+	- 0.8787 * SentimentHE 
+	+ 0.019 * NegativityHE 
+	+ 0.9235 * PositivityHE 
+	- 1.5332 * SentimentLM 
+	+ 0.0025 * NegativityLM 
+	+ 0.1823 * PositivityLM 
+	+ 0.0035 * RatioUncertaintyLM 
+	+ 2.3061 * NegativityQDAP 
+	+ 0.0668 * PositivityQDAP 
+	+ 0.0429
+
+LM num: 10
+Section = 
+	0.0004 * WordCount 
+	+ 0.2028 * SentimentGI 
+	+ 1.9704 * NegativityGI 
+	+ 0.1683 * PositivityGI 
+	- 0.8787 * SentimentHE 
+	+ 0.019 * NegativityHE 
+	+ 0.9235 * PositivityHE 
+	- 1.5332 * SentimentLM 
+	+ 0.0025 * NegativityLM 
+	+ 0.1823 * PositivityLM 
+	+ 0.0035 * RatioUncertaintyLM 
+	+ 2.3061 * NegativityQDAP 
+	+ 0.0668 * PositivityQDAP 
+	+ 0.108
+
+LM num: 11
+Section = 
+	0.0004 * WordCount 
+	+ 0.2028 * SentimentGI 
+	+ 1.9704 * NegativityGI 
+	+ 0.1683 * PositivityGI 
+	- 0.8787 * SentimentHE 
+	+ 0.019 * NegativityHE 
+	+ 0.9235 * PositivityHE 
+	- 1.5332 * SentimentLM 
+	+ 0.0025 * NegativityLM 
+	+ 0.1823 * PositivityLM 
+	+ 0.0035 * RatioUncertaintyLM 
+	- 0.8843 * SentimentQDAP 
+	+ 2.3061 * NegativityQDAP 
+	+ 0.0668 * PositivityQDAP 
+	+ 0.1788
+
+LM num: 12
+Section = 
+	0.0004 * WordCount 
+	+ 0.2028 * SentimentGI 
+	+ 1.9704 * NegativityGI 
+	+ 0.1683 * PositivityGI 
+	- 0.8787 * SentimentHE 
+	+ 0.019 * NegativityHE 
+	+ 0.9235 * PositivityHE 
+	- 1.5332 * SentimentLM 
+	+ 0.0025 * NegativityLM 
+	+ 0.1823 * PositivityLM 
+	+ 0.0035 * RatioUncertaintyLM 
+	- 0.9883 * SentimentQDAP 
+	+ 2.3061 * NegativityQDAP 
+	+ 0.0668 * PositivityQDAP 
+	+ 0.1758
+
+LM num: 13
+Section = 
+	0.0017 * WordCount 
+	+ 1.4062 * SentimentGI 
+	+ 0.2853 * NegativityGI 
+	- 2.2135 * PositivityGI 
+	- 0.8787 * SentimentHE 
+	+ 0.019 * NegativityHE 
+	+ 0.9235 * PositivityHE 
+	- 5.4722 * SentimentLM 
+	+ 0.0025 * NegativityLM 
+	+ 0.1823 * PositivityLM 
+	+ 0.0035 * RatioUncertaintyLM 
+	+ 2.7093 * NegativityQDAP 
+	- 0.8698 * PositivityQDAP 
+	+ 0.5349
+
+LM num: 14
+Section = 
+	0.0017 * WordCount 
+	+ 1.4062 * SentimentGI 
+	+ 0.2853 * NegativityGI 
+	- 1.9778 * PositivityGI 
+	- 0.8787 * SentimentHE 
+	+ 0.019 * NegativityHE 
+	+ 0.9235 * PositivityHE 
+	- 5.4722 * SentimentLM 
+	+ 0.0025 * NegativityLM 
+	+ 0.1823 * PositivityLM 
+	+ 0.0035 * RatioUncertaintyLM 
+	+ 2.7093 * NegativityQDAP 
+	- 1.417 * PositivityQDAP 
+	+ 0.4921
+
+LM num: 15
+Section = 
+	0.0017 * WordCount 
+	+ 1.4062 * SentimentGI 
+	+ 0.2853 * NegativityGI 
+	- 1.6287 * PositivityGI 
+	- 0.8787 * SentimentHE 
+	+ 0.019 * NegativityHE 
+	+ 0.9235 * PositivityHE 
+	- 6.3843 * SentimentLM 
+	+ 0.0025 * NegativityLM 
+	+ 0.1823 * PositivityLM 
+	+ 0.0035 * RatioUncertaintyLM 
+	+ 2.7093 * NegativityQDAP 
+	+ 0.0668 * PositivityQDAP 
+	+ 0.3369
+
+LM num: 16
+Section = 
+	0.0025 * WordCount 
+	+ 2.191 * SentimentGI 
+	+ 0.2853 * NegativityGI 
+	- 0.8043 * PositivityGI 
+	- 0.8787 * SentimentHE 
+	+ 0.019 * NegativityHE 
+	+ 0.9235 * PositivityHE 
+	- 5.5491 * SentimentLM 
+	+ 0.0025 * NegativityLM 
+	+ 0.1823 * PositivityLM 
+	+ 0.0035 * RatioUncertaintyLM 
+	+ 2.7093 * NegativityQDAP 
+	+ 0.0668 * PositivityQDAP 
+	+ 0.1757
+
+LM num: 17
+Section = 
+	-0.0016 * WordCount 
+	+ 0.1474 * SentimentGI 
+	+ 1.6939 * NegativityGI 
+	+ 0.1683 * PositivityGI 
+	- 0.8787 * SentimentHE 
+	+ 0.019 * NegativityHE 
+	+ 0.9235 * PositivityHE 
+	+ 0.0025 * NegativityLM 
+	+ 0.1823 * PositivityLM 
+	+ 0.0035 * RatioUncertaintyLM 
+	+ 1.2273 * SentimentQDAP 
+	- 0.0121 * NegativityQDAP 
+	+ 0.0668 * PositivityQDAP 
+	+ 0.0555
+
+LM num: 18
+Section = 
+	-0.0018 * WordCount 
+	+ 0.1474 * SentimentGI 
+	+ 1.5459 * NegativityGI 
+	+ 0.1683 * PositivityGI 
+	- 0.8787 * SentimentHE 
+	+ 0.019 * NegativityHE 
+	+ 0.9235 * PositivityHE 
+	+ 0.0025 * NegativityLM 
+	+ 0.1823 * PositivityLM 
+	+ 0.0035 * RatioUncertaintyLM 
+	+ 3.1168 * SentimentQDAP 
+	- 0.0121 * NegativityQDAP 
+	+ 0.0668 * PositivityQDAP 
+	+ 0.2531
+
+LM num: 19
+Section = 
+	-0.0016 * WordCount 
+	+ 0.1474 * SentimentGI 
+	+ 1.3385 * NegativityGI 
+	+ 0.1683 * PositivityGI 
+	- 0.8787 * SentimentHE 
+	+ 0.019 * NegativityHE 
+	- 0.5586 * PositivityHE 
+	+ 0.0025 * NegativityLM 
+	+ 0.1823 * PositivityLM 
+	+ 0.0035 * RatioUncertaintyLM 
+	+ 1.1356 * SentimentQDAP 
+	- 0.0121 * NegativityQDAP 
+	+ 0.0668 * PositivityQDAP 
+	+ 0.1601
+
+LM num: 20
+Section = 
+	-0.0016 * WordCount 
+	+ 0.1474 * SentimentGI 
+	+ 1.3385 * NegativityGI 
+	+ 0.1683 * PositivityGI 
+	- 0.8787 * SentimentHE 
+	+ 0.019 * NegativityHE 
+	- 0.5586 * PositivityHE 
+	+ 0.0025 * NegativityLM 
+	+ 0.1823 * PositivityLM 
+	+ 0.0035 * RatioUncertaintyLM 
+	+ 1.1356 * SentimentQDAP 
+	- 0.0121 * NegativityQDAP 
+	+ 0.0668 * PositivityQDAP 
+	+ 0.1963
+
+LM num: 21
+Section = 
+	-0.0016 * WordCount 
+	+ 0.1474 * SentimentGI 
+	+ 1.3385 * NegativityGI 
+	+ 0.1683 * PositivityGI 
+	- 0.8787 * SentimentHE 
+	+ 0.019 * NegativityHE 
+	- 0.5586 * PositivityHE 
+	+ 0.0025 * NegativityLM 
+	+ 0.1823 * PositivityLM 
+	+ 0.0035 * RatioUncertaintyLM 
+	+ 1.1356 * SentimentQDAP 
+	- 0.0121 * NegativityQDAP 
+	+ 0.0668 * PositivityQDAP 
+	+ 0.1301
+
+LM num: 22
+Section = 
+	-0.0016 * WordCount 
+	+ 0.1474 * SentimentGI 
+	+ 1.3385 * NegativityGI 
+	+ 0.1683 * PositivityGI 
+	- 0.8787 * SentimentHE 
+	+ 0.019 * NegativityHE 
+	- 0.6756 * PositivityHE 
+	+ 0.0025 * NegativityLM 
+	+ 0.1823 * PositivityLM 
+	+ 0.0035 * RatioUncertaintyLM 
+	+ 1.1356 * SentimentQDAP 
+	- 0.0121 * NegativityQDAP 
+	+ 0.0668 * PositivityQDAP 
+	+ 0.0993
+
+LM num: 23
+Section = 
+	-0.0003 * WordCount 
+	+ 0.0014 * NegativityGI 
+	+ 0.234 * PositivityGI 
+	- 1.7208 * SentimentHE 
+	+ 0.019 * NegativityHE 
+	+ 4.0022 * PositivityHE 
+	+ 0.0025 * NegativityLM 
+	- 0.5194 * PositivityLM 
+	+ 0.0035 * RatioUncertaintyLM 
+	- 0.0028 * NegativityQDAP 
+	- 0.1941 * PositivityQDAP 
+	+ 0.0572
+
+LM num: 24
+Section = 
+	-0 * WordCount 
+	+ 0.9301 * NegativityGI 
+	+ 0.0049 * PositivityGI 
+	+ 3.3321 * SentimentHE 
+	+ 0.019 * NegativityHE 
+	+ 0.0837 * PositivityHE 
+	+ 1.1511 * NegativityLM 
+	- 0.0062 * PositivityLM 
+	+ 1.0372 * RatioUncertaintyLM 
+	- 1.5322 * NegativityQDAP 
+	- 1.6059 * PositivityQDAP 
+	+ 0.1821
+
+LM num: 25
+Section = 
+	-0 * WordCount 
+	+ 0.5424 * NegativityGI 
+	+ 0.0024 * PositivityGI 
+	+ 6.2511 * NegativityHE 
+	+ 8.6725 * PositivityHE 
+	+ 1.4148 * NegativityLM 
+	- 2.1411 * PositivityLM 
+	+ 2.0653 * RatioUncertaintyLM 
+	- 1.1644 * NegativityQDAP 
+	- 1.879 * PositivityQDAP 
+	+ 0.1686
+
+LM num: 26
+Section = 
+	-0 * WordCount 
+	+ 0.7885 * NegativityGI 
+	- 0.0208 * PositivityGI 
+	+ 0.3637 * NegativityHE 
+	+ 5.7532 * PositivityHE 
+	+ 0.9488 * NegativityLM 
+	- 0.0362 * PositivityLM 
+	+ 6.5723 * RatioUncertaintyLM 
+	- 0.0204 * NegativityQDAP 
+	- 1.5258 * PositivityQDAP 
+	+ 0.1692
+
+LM num: 27
+Section = 
+	0.0003 * WordCount 
+	- 0.0489 * SentimentGI 
+	+ 0.1039 * NegativityGI 
+	- 0.053 * PositivityGI 
+	+ 0.8157 * NegativityHE 
+	+ 0.4564 * PositivityHE 
+	+ 0.029 * NegativityLM 
+	- 0.2989 * PositivityLM 
+	+ 0.08 * RatioUncertaintyLM 
+	- 0.5661 * SentimentQDAP 
+	- 0.0204 * NegativityQDAP 
+	- 0.1404 * PositivityQDAP 
+	+ 0.8165
+
+LM num: 28
+Section = 
+	0.0005 * WordCount 
+	- 1.9351 * SentimentGI 
+	+ 0.1039 * NegativityGI 
+	- 0.053 * PositivityGI 
+	+ 1.0077 * NegativityHE 
+	+ 0.4564 * PositivityHE 
+	+ 0.029 * NegativityLM 
+	- 0.5177 * PositivityLM 
+	- 0.119 * RatioUncertaintyLM 
+	- 0.103 * SentimentQDAP 
+	- 0.0204 * NegativityQDAP 
+	- 0.1404 * PositivityQDAP 
+	+ 0.7101
+
+Number of Rules : 28
+
+Classifier for class with index 1:
+
+M5 pruned model tree:
+(using smoothed linear models)
+
+WordCount <= 47.5 : 
+|   SentimentLM <= -0.042 : LM1 (1053/91.473%)
+|   SentimentLM >  -0.042 : 
+|   |   PositivityQDAP <= 0.096 : 
+|   |   |   SentimentGI <= 0.025 : LM2 (483/60.804%)
+|   |   |   SentimentGI >  0.025 : 
+|   |   |   |   PositivityQDAP <= 0.032 : LM3 (204/95.803%)
+|   |   |   |   PositivityQDAP >  0.032 : LM4 (536/73.03%)
+|   |   PositivityQDAP >  0.096 : 
+|   |   |   RatioUncertaintyLM <= 0.011 : LM5 (919/51.455%)
+|   |   |   RatioUncertaintyLM >  0.011 : LM6 (296/70.529%)
+WordCount >  47.5 : LM7 (4137/105.46%)
+
+LM num: 1
+Section = 
+	0.0042 * WordCount 
+	- 0.0067 * NegativityGI 
+	- 0.0015 * PositivityGI 
+	- 2.3404 * NegativityHE 
+	- 0.7355 * SentimentLM 
+	+ 0.0241 * NegativityLM 
+	- 1.0966 * RatioUncertaintyLM 
+	+ 0.0028 * NegativityQDAP 
+	- 0.2974 * PositivityQDAP 
+	+ 0.068
+
+LM num: 2
+Section = 
+	0.0001 * WordCount 
+	- 0.0262 * NegativityGI 
+	+ 0.0048 * PositivityGI 
+	- 0.0187 * NegativityHE 
+	+ 0.0428 * NegativityLM 
+	- 0.0058 * RatioUncertaintyLM 
+	+ 0.0028 * NegativityQDAP 
+	- 0.0225 * PositivityQDAP 
+	+ 0.0689
+
+LM num: 3
+Section = 
+	0.0043 * WordCount 
+	- 1.9101 * NegativityGI 
+	+ 0.0027 * PositivityGI 
+	- 0.0187 * NegativityHE 
+	+ 0.104 * NegativityLM 
+	- 0.0058 * RatioUncertaintyLM 
+	+ 0.0028 * NegativityQDAP 
+	- 0.086 * PositivityQDAP 
+	+ 0.157
+
+LM num: 4
+Section = 
+	0.0002 * WordCount 
+	+ 0.3369 * SentimentGI 
+	- 0.0462 * NegativityGI 
+	+ 0.0027 * PositivityGI 
+	- 0.0187 * NegativityHE 
+	+ 1.7255 * NegativityLM 
+	- 0.0058 * RatioUncertaintyLM 
+	+ 0.0028 * NegativityQDAP 
+	- 0.0445 * PositivityQDAP 
+	+ 0.0463
+
+LM num: 5
+Section = 
+	0 * WordCount 
+	- 0.0081 * NegativityGI 
+	- 0.0015 * PositivityGI 
+	- 0.0146 * SentimentHE 
+	- 0.0187 * NegativityHE 
+	+ 0.0173 * PositivityHE 
+	+ 0.021 * NegativityLM 
+	+ 0.0036 * RatioUncertaintyLM 
+	+ 0.0028 * NegativityQDAP 
+	- 0.0066 * PositivityQDAP 
+	+ 0.0489
+
+LM num: 6
+Section = 
+	0 * WordCount 
+	- 0.0081 * NegativityGI 
+	- 0.0015 * PositivityGI 
+	- 0.0437 * SentimentHE 
+	- 0.0187 * NegativityHE 
+	+ 0.0521 * PositivityHE 
+	+ 0.021 * NegativityLM 
+	+ 0.0222 * RatioUncertaintyLM 
+	+ 0.0028 * NegativityQDAP 
+	- 0.0066 * PositivityQDAP 
+	+ 0.0923
+
+LM num: 7
+Section = 
+	0.001 * WordCount 
+	- 1.381 * NegativityGI 
+	- 1.2322 * PositivityGI 
+	- 6.0312 * NegativityHE 
+	+ 2.3118 * NegativityLM 
+	+ 0.8328 * PositivityLM 
+	- 3.5194 * RatioUncertaintyLM 
+	+ 1.7574 * NegativityQDAP 
+	- 0.0009 * PositivityQDAP 
+	+ 0.3995
+
+Number of Rules : 7
+
+Classifier for class with index 2:
+
+M5 pruned model tree:
+(using smoothed linear models)
+
+NegativityQDAP <= 0.04 : 
+|   WordCount <= 31.5 : LM1 (1199/90.482%)
+|   WordCount >  31.5 : LM2 (2693/99.904%)
+NegativityQDAP >  0.04 : 
+|   SentimentGI <= 0.009 : LM3 (1152/74.041%)
+|   SentimentGI >  0.009 : 
+|   |   WordCount <= 39.5 : LM4 (629/81.901%)
+|   |   WordCount >  39.5 : LM5 (1955/96.058%)
+
+LM num: 1
+Section = 
+	0.0173 * WordCount 
+	- 0.0013 * NegativityGI 
+	+ 0.5077 * PositivityGI 
+	- 0.002 * NegativityHE 
+	- 1.587 * PositivityHE 
+	- 0.0207 * NegativityLM 
+	+ 0.0235 * RatioUncertaintyLM 
+	- 0.4013 * SentimentQDAP 
+	- 7.0013 * NegativityQDAP 
+	- 0.0014 * PositivityQDAP 
+	- 0.0283
+
+LM num: 2
+Section = 
+	0.0007 * WordCount 
+	+ 0.6319 * NegativityGI 
+	+ 0.8393 * PositivityGI 
+	- 0.002 * NegativityHE 
+	- 3.5731 * PositivityHE 
+	- 2.343 * NegativityLM 
+	+ 2.0312 * RatioUncertaintyLM 
+	- 4.6462 * NegativityQDAP 
+	+ 0.4337 * PositivityQDAP 
+	+ 0.4469
+
+LM num: 3
+Section = 
+	0.0006 * WordCount 
+	+ 0.8071 * SentimentGI 
+	- 0.0101 * NegativityGI 
+	- 0.3528 * PositivityGI 
+	- 0.7204 * NegativityHE 
+	- 2.1053 * PositivityHE 
+	+ 0.4104 * NegativityLM 
+	+ 1.1108 * RatioUncertaintyLM 
+	- 0.0152 * NegativityQDAP 
+	- 0.6187 * PositivityQDAP 
+	+ 0.2511
+
+LM num: 4
+Section = 
+	0.0073 * WordCount 
+	+ 0.946 * SentimentGI 
+	+ 0.0214 * NegativityGI 
+	+ 0.0116 * PositivityGI 
+	- 0.0054 * NegativityHE 
+	- 1.1492 * PositivityHE 
+	+ 0.8423 * NegativityLM 
+	+ 2.5483 * RatioUncertaintyLM 
+	- 0.0353 * NegativityQDAP 
+	- 0.0182 * PositivityQDAP 
+	- 0.1315
+
+LM num: 5
+Section = 
+	0 * WordCount 
+	+ 0.011 * SentimentGI 
+	+ 0.0035 * NegativityGI 
+	+ 2.0255 * PositivityGI 
+	- 0.0054 * NegativityHE 
+	- 3.313 * PositivityHE 
+	+ 0.0065 * NegativityLM 
+	+ 1.4023 * RatioUncertaintyLM 
+	- 1.2534 * NegativityQDAP 
+	- 0.8677 * PositivityQDAP 
+	+ 0.2245
+
+Number of Rules : 5
+
+Classifier for class with index 3:
+
+M5 pruned model tree:
+(using smoothed linear models)
+
+WordCount <= 43.5 : LM1 (3166/104.3%)
+WordCount >  43.5 : 
+|   WordCount <= 63.5 : LM2 (1568/77.778%)
+|   WordCount >  63.5 : 
+|   |   NegativityLM <= 0.036 : 
+|   |   |   NegativityQDAP <= 0.025 : 
+|   |   |   |   PositivityHE <= 0.027 : 
+|   |   |   |   |   PositivityQDAP <= 0.072 : LM3 (97/0%)
+|   |   |   |   |   PositivityQDAP >  0.072 : 
+|   |   |   |   |   |   PositivityLM <= 0.027 : 
+|   |   |   |   |   |   |   NegativityGI <= 0.061 : 
+|   |   |   |   |   |   |   |   RatioUncertaintyLM <= 0.014 : 
+|   |   |   |   |   |   |   |   |   PositivityLM <= 0.019 : 
+|   |   |   |   |   |   |   |   |   |   NegativityQDAP <= 0.014 : LM4 (57/41.351%)
+|   |   |   |   |   |   |   |   |   |   NegativityQDAP >  0.014 : 
+|   |   |   |   |   |   |   |   |   |   |   PositivityGI <= 0.117 : LM5 (8/0%)
+|   |   |   |   |   |   |   |   |   |   |   PositivityGI >  0.117 : 
+|   |   |   |   |   |   |   |   |   |   |   |   NegativityHE <= 0.01 : 
+|   |   |   |   |   |   |   |   |   |   |   |   |   RatioUncertaintyLM <= 0.005 : 
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   SentimentLM <= -0.005 : 
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NegativityQDAP <= 0.015 : LM6 (2/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NegativityQDAP >  0.015 : LM7 (3/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   SentimentLM >  -0.005 : LM8 (3/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   |   RatioUncertaintyLM >  0.005 : LM9 (3/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   NegativityHE >  0.01 : LM10 (5/0%)
+|   |   |   |   |   |   |   |   |   PositivityLM >  0.019 : LM11 (21/0%)
+|   |   |   |   |   |   |   |   RatioUncertaintyLM >  0.014 : LM12 (35/0%)
+|   |   |   |   |   |   |   NegativityGI >  0.061 : LM13 (75/0%)
+|   |   |   |   |   |   PositivityLM >  0.027 : 
+|   |   |   |   |   |   |   SentimentHE <= 0.011 : LM14 (36/37.84%)
+|   |   |   |   |   |   |   SentimentHE >  0.011 : 
+|   |   |   |   |   |   |   |   PositivityHE <= 0.023 : 
+|   |   |   |   |   |   |   |   |   SentimentGI <= 0.139 : 
+|   |   |   |   |   |   |   |   |   |   SentimentGI <= 0.129 : 
+|   |   |   |   |   |   |   |   |   |   |   WordCount <= 83.5 : LM15 (6/0%)
+|   |   |   |   |   |   |   |   |   |   |   WordCount >  83.5 : 
+|   |   |   |   |   |   |   |   |   |   |   |   SentimentGI <= 0.083 : LM16 (5/56.215%)
+|   |   |   |   |   |   |   |   |   |   |   |   SentimentGI >  0.083 : LM17 (4/0%)
+|   |   |   |   |   |   |   |   |   |   SentimentGI >  0.129 : LM18 (5/0%)
+|   |   |   |   |   |   |   |   |   SentimentGI >  0.139 : 
+|   |   |   |   |   |   |   |   |   |   SentimentGI <= 0.199 : LM19 (11/0%)
+|   |   |   |   |   |   |   |   |   |   SentimentGI >  0.199 : 
+|   |   |   |   |   |   |   |   |   |   |   NegativityGI <= 0.03 : LM20 (2/0%)
+|   |   |   |   |   |   |   |   |   |   |   NegativityGI >  0.03 : LM21 (2/0%)
+|   |   |   |   |   |   |   |   PositivityHE >  0.023 : LM22 (13/0%)
+|   |   |   |   PositivityHE >  0.027 : LM23 (143/0%)
+|   |   |   NegativityQDAP >  0.025 : 
+|   |   |   |   NegativityQDAP <= 0.063 : LM24 (555/74.158%)
+|   |   |   |   NegativityQDAP >  0.063 : 
+|   |   |   |   |   NegativityHE <= 0.014 : 
+|   |   |   |   |   |   NegativityLM <= 0.015 : 
+|   |   |   |   |   |   |   RatioUncertaintyLM <= 0.012 : 
+|   |   |   |   |   |   |   |   NegativityLM <= 0.01 : LM25 (7/80.574%)
+|   |   |   |   |   |   |   |   NegativityLM >  0.01 : 
+|   |   |   |   |   |   |   |   |   PositivityHE <= 0.027 : 
+|   |   |   |   |   |   |   |   |   |   WordCount <= 76.5 : 
+|   |   |   |   |   |   |   |   |   |   |   WordCount <= 73 : LM26 (2/0%)
+|   |   |   |   |   |   |   |   |   |   |   WordCount >  73 : LM27 (2/0%)
+|   |   |   |   |   |   |   |   |   |   WordCount >  76.5 : LM28 (9/0%)
+|   |   |   |   |   |   |   |   |   PositivityHE >  0.027 : LM29 (4/0%)
+|   |   |   |   |   |   |   RatioUncertaintyLM >  0.012 : LM30 (15/44.292%)
+|   |   |   |   |   |   NegativityLM >  0.015 : 
+|   |   |   |   |   |   |   SentimentGI <= 0.05 : 
+|   |   |   |   |   |   |   |   PositivityQDAP <= 0.072 : LM31 (9/72.364%)
+|   |   |   |   |   |   |   |   PositivityQDAP >  0.072 : 
+|   |   |   |   |   |   |   |   |   SentimentQDAP <= 0.011 : LM32 (9/72.364%)
+|   |   |   |   |   |   |   |   |   SentimentQDAP >  0.011 : 
+|   |   |   |   |   |   |   |   |   |   WordCount <= 164 : 
+|   |   |   |   |   |   |   |   |   |   |   SentimentHE <= 0.014 : LM33 (7/0%)
+|   |   |   |   |   |   |   |   |   |   |   SentimentHE >  0.014 : 
+|   |   |   |   |   |   |   |   |   |   |   |   PositivityLM <= 0.039 : LM34 (8/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   PositivityLM >  0.039 : LM35 (4/55.061%)
+|   |   |   |   |   |   |   |   |   |   WordCount >  164 : LM36 (6/0%)
+|   |   |   |   |   |   |   SentimentGI >  0.05 : LM37 (29/0%)
+|   |   |   |   |   NegativityHE >  0.014 : 
+|   |   |   |   |   |   SentimentHE <= -0.021 : 
+|   |   |   |   |   |   |   PositivityGI <= 0.161 : LM38 (4/0%)
+|   |   |   |   |   |   |   PositivityGI >  0.161 : LM39 (2/0%)
+|   |   |   |   |   |   SentimentHE >  -0.021 : LM40 (23/0%)
+|   |   NegativityLM >  0.036 : 
+|   |   |   PositivityQDAP <= 0.075 : 
+|   |   |   |   NegativityQDAP <= 0.099 : LM41 (266/0%)
+|   |   |   |   NegativityQDAP >  0.099 : 
+|   |   |   |   |   NegativityHE <= 0.003 : 
+|   |   |   |   |   |   SentimentHE <= 0.004 : 
+|   |   |   |   |   |   |   NegativityQDAP <= 0.114 : LM42 (4/0%)
+|   |   |   |   |   |   |   NegativityQDAP >  0.114 : 
+|   |   |   |   |   |   |   |   NegativityQDAP <= 0.134 : LM43 (3/0%)
+|   |   |   |   |   |   |   |   NegativityQDAP >  0.134 : LM44 (2/0%)
+|   |   |   |   |   |   SentimentHE >  0.004 : LM45 (11/0%)
+|   |   |   |   |   NegativityHE >  0.003 : LM46 (48/0%)
+|   |   |   PositivityQDAP >  0.075 : 
+|   |   |   |   WordCount <= 77.5 : LM47 (325/64.652%)
+|   |   |   |   WordCount >  77.5 : 
+|   |   |   |   |   PositivityHE <= 0.021 : 
+|   |   |   |   |   |   NegativityLM <= 0.082 : 
+|   |   |   |   |   |   |   RatioUncertaintyLM <= 0.012 : LM48 (271/42.833%)
+|   |   |   |   |   |   |   RatioUncertaintyLM >  0.012 : 
+|   |   |   |   |   |   |   |   NegativityQDAP <= 0.037 : 
+|   |   |   |   |   |   |   |   |   WordCount <= 138 : LM49 (42/0%)
+|   |   |   |   |   |   |   |   |   WordCount >  138 : LM50 (11/55.444%)
+|   |   |   |   |   |   |   |   NegativityQDAP >  0.037 : 
+|   |   |   |   |   |   |   |   |   PositivityHE <= 0.014 : 
+|   |   |   |   |   |   |   |   |   |   PositivityHE <= 0.011 : 
+|   |   |   |   |   |   |   |   |   |   |   SentimentHE <= 0.003 : 
+|   |   |   |   |   |   |   |   |   |   |   |   SentimentGI <= 0.056 : 
+|   |   |   |   |   |   |   |   |   |   |   |   |   NegativityLM <= 0.047 : LM51 (8/99.705%)
+|   |   |   |   |   |   |   |   |   |   |   |   |   NegativityLM >  0.047 : LM52 (30/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   SentimentGI >  0.056 : 
+|   |   |   |   |   |   |   |   |   |   |   |   |   RatioUncertaintyLM <= 0.015 : LM53 (8/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   |   RatioUncertaintyLM >  0.015 : 
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   PositivityQDAP <= 0.109 : LM54 (6/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   PositivityQDAP >  0.109 : 
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NegativityLM <= 0.042 : LM55 (4/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NegativityLM >  0.042 : 
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NegativityHE <= 0.005 : LM56 (3/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NegativityHE >  0.005 : 
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PositivityHE <= 0.003 : LM57 (5/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PositivityHE >  0.003 : 
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NegativityGI <= 0.066 : LM58 (2/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NegativityGI >  0.066 : LM59 (4/0%)
+|   |   |   |   |   |   |   |   |   |   |   SentimentHE >  0.003 : LM60 (24/0%)
+|   |   |   |   |   |   |   |   |   |   PositivityHE >  0.011 : 
+|   |   |   |   |   |   |   |   |   |   |   PositivityLM <= 0.025 : 
+|   |   |   |   |   |   |   |   |   |   |   |   NegativityLM <= 0.039 : LM61 (5/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   NegativityLM >  0.039 : 
+|   |   |   |   |   |   |   |   |   |   |   |   |   PositivityHE <= 0.012 : LM62 (10/75.051%)
+|   |   |   |   |   |   |   |   |   |   |   |   |   PositivityHE >  0.012 : LM63 (5/0%)
+|   |   |   |   |   |   |   |   |   |   |   PositivityLM >  0.025 : LM64 (6/0%)
+|   |   |   |   |   |   |   |   |   PositivityHE >  0.014 : LM65 (38/34.809%)
+|   |   |   |   |   |   NegativityLM >  0.082 : 
+|   |   |   |   |   |   |   NegativityGI <= 0.083 : 
+|   |   |   |   |   |   |   |   NegativityGI <= 0.061 : LM66 (8/82.648%)
+|   |   |   |   |   |   |   |   NegativityGI >  0.061 : LM67 (19/0%)
+|   |   |   |   |   |   |   NegativityGI >  0.083 : LM68 (105/0%)
+|   |   |   |   |   PositivityHE >  0.021 : 
+|   |   |   |   |   |   SentimentHE <= 0.019 : LM69 (134/0%)
+|   |   |   |   |   |   SentimentHE >  0.019 : 
+|   |   |   |   |   |   |   PositivityHE <= 0.04 : 
+|   |   |   |   |   |   |   |   PositivityLM <= 0.019 : LM70 (37/0%)
+|   |   |   |   |   |   |   |   PositivityLM >  0.019 : 
+|   |   |   |   |   |   |   |   |   SentimentGI <= 0.075 : 
+|   |   |   |   |   |   |   |   |   |   PositivityLM <= 0.037 : 
+|   |   |   |   |   |   |   |   |   |   |   SentimentGI <= 0.056 : LM71 (20/0%)
+|   |   |   |   |   |   |   |   |   |   |   SentimentGI >  0.056 : 
+|   |   |   |   |   |   |   |   |   |   |   |   SentimentGI <= 0.059 : 
+|   |   |   |   |   |   |   |   |   |   |   |   |   SentimentLM <= -0.028 : LM72 (2/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   |   SentimentLM >  -0.028 : LM73 (2/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   SentimentGI >  0.059 : LM74 (7/0%)
+|   |   |   |   |   |   |   |   |   |   PositivityLM >  0.037 : 
+|   |   |   |   |   |   |   |   |   |   |   PositivityLM <= 0.049 : 
+|   |   |   |   |   |   |   |   |   |   |   |   SentimentGI <= -0.016 : LM75 (3/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   SentimentGI >  -0.016 : 
+|   |   |   |   |   |   |   |   |   |   |   |   |   SentimentGI <= 0.072 : LM76 (4/0%)
+|   |   |   |   |   |   |   |   |   |   |   |   |   SentimentGI >  0.072 : LM77 (2/0%)
+|   |   |   |   |   |   |   |   |   |   |   PositivityLM >  0.049 : LM78 (5/0%)
+|   |   |   |   |   |   |   |   |   SentimentGI >  0.075 : 
+|   |   |   |   |   |   |   |   |   |   SentimentLM <= -0.034 : 
+|   |   |   |   |   |   |   |   |   |   |   NegativityGI <= 0.067 : LM79 (3/108.546%)
+|   |   |   |   |   |   |   |   |   |   |   NegativityGI >  0.067 : LM80 (11/0%)
+|   |   |   |   |   |   |   |   |   |   SentimentLM >  -0.034 : LM81 (52/0%)
+|   |   |   |   |   |   |   PositivityHE >  0.04 : LM82 (108/0%)
+
+LM num: 1
+Section = 
+	-0.0129 * WordCount 
+	+ 0.6729 * NegativityGI 
+	- 0.9178 * PositivityGI 
+	- 4.5329 * NegativityHE 
+	- 1.048 * PositivityHE 
+	- 1.6547 * NegativityLM 
+	+ 0.0022 * PositivityLM 
+	- 0.9801 * RatioUncertaintyLM 
+	+ 1.4853 * NegativityQDAP 
+	+ 1.7 * PositivityQDAP 
+	+ 0.7594
+
+LM num: 2
+Section = 
+	-0.0039 * WordCount 
+	+ 1.0478 * NegativityGI 
+	- 0.7207 * PositivityGI 
+	- 2.4641 * NegativityHE 
+	- 1.5294 * PositivityHE 
+	- 2.3298 * NegativityLM 
+	+ 0.0016 * PositivityLM 
+	- 1.2347 * RatioUncertaintyLM 
+	+ 1.8342 * NegativityQDAP 
+	+ 1.8385 * PositivityQDAP 
+	+ 0.2738
+
+LM num: 3
+Section = 
+	-0 * WordCount 
+	+ 0.0049 * NegativityGI 
+	- 0.0382 * PositivityGI 
+	- 0.1496 * NegativityHE 
+	- 0.1239 * PositivityHE 
+	+ 0.2462 * SentimentLM 
+	- 0.1295 * NegativityLM 
+	+ 0.0424 * PositivityLM 
+	- 0.0379 * RatioUncertaintyLM 
+	+ 0.1438 * NegativityQDAP 
+	+ 0.107 * PositivityQDAP 
+	+ 0.008
+
+LM num: 4
+Section = 
+	-0 * WordCount 
+	+ 0.0049 * NegativityGI 
+	- 0.0382 * PositivityGI 
+	- 0.1496 * NegativityHE 
+	- 0.1239 * PositivityHE 
+	+ 0.2358 * SentimentLM 
+	- 0.1295 * NegativityLM 
+	+ 3.5138 * PositivityLM 
+	- 0.4282 * RatioUncertaintyLM 
+	+ 0.1438 * NegativityQDAP 
+	+ 0.0759 * PositivityQDAP 
+	+ 0.0341
+
+LM num: 5
+Section = 
+	-0 * WordCount 
+	+ 0.0049 * NegativityGI 
+	- 0.0382 * PositivityGI 
+	- 0.1496 * NegativityHE 
+	- 0.1239 * PositivityHE 
+	+ 0.2358 * SentimentLM 
+	- 0.1295 * NegativityLM 
+	+ 1.6591 * PositivityLM 
+	- 6.9221 * RatioUncertaintyLM 
+	+ 0.1438 * NegativityQDAP 
+	+ 0.0759 * PositivityQDAP 
+	+ 0.1032
+
+LM num: 6
+Section = 
+	-0 * WordCount 
+	+ 0.0049 * NegativityGI 
+	- 0.0382 * PositivityGI 
+	- 1.9895 * NegativityHE 
+	- 0.1239 * PositivityHE 
+	+ 0.2358 * SentimentLM 
+	- 0.1295 * NegativityLM 
+	+ 1.6591 * PositivityLM 
+	- 12.3575 * RatioUncertaintyLM 
+	- 0.9627 * NegativityQDAP 
+	+ 0.0759 * PositivityQDAP 
+	+ 0.2045
+
+LM num: 7
+Section = 
+	-0 * WordCount 
+	+ 0.0049 * NegativityGI 
+	- 0.0382 * PositivityGI 
+	- 1.9895 * NegativityHE 
+	- 0.1239 * PositivityHE 
+	+ 0.2358 * SentimentLM 
+	- 0.1295 * NegativityLM 
+	+ 1.6591 * PositivityLM 
+	- 12.3575 * RatioUncertaintyLM 
+	- 0.9013 * NegativityQDAP 
+	+ 0.0759 * PositivityQDAP 
+	+ 0.2026
+
+LM num: 8
+Section = 
+	-0 * WordCount 
+	+ 0.0049 * NegativityGI 
+	- 0.0382 * PositivityGI 
+	- 1.9895 * NegativityHE 
+	- 0.1239 * PositivityHE 
+	+ 0.2358 * SentimentLM 
+	- 0.1295 * NegativityLM 
+	+ 1.6591 * PositivityLM 
+	- 12.3575 * RatioUncertaintyLM 
+	+ 0.1438 * NegativityQDAP 
+	+ 0.0759 * PositivityQDAP 
+	+ 0.1897
+
+LM num: 9
+Section = 
+	-0 * WordCount 
+	+ 0.0049 * NegativityGI 
+	- 0.0382 * PositivityGI 
+	- 1.9895 * NegativityHE 
+	- 0.1239 * PositivityHE 
+	+ 0.2358 * SentimentLM 
+	- 0.1295 * NegativityLM 
+	+ 1.6591 * PositivityLM 
+	- 13.0944 * RatioUncertaintyLM 
+	+ 0.1438 * NegativityQDAP 
+	+ 0.0759 * PositivityQDAP 
+	+ 0.1805
+
+LM num: 10
+Section = 
+	-0 * WordCount 
+	+ 0.0049 * NegativityGI 
+	- 0.0382 * PositivityGI 
+	- 2.5415 * NegativityHE 
+	- 0.1239 * PositivityHE 
+	+ 0.2358 * SentimentLM 
+	- 0.1295 * NegativityLM 
+	+ 1.6591 * PositivityLM 
+	- 11.042 * RatioUncertaintyLM 
+	+ 0.1438 * NegativityQDAP 
+	+ 0.0759 * PositivityQDAP 
+	+ 0.1599
+
+LM num: 11
+Section = 
+	-0 * WordCount 
+	+ 0.0049 * NegativityGI 
+	- 0.0382 * PositivityGI 
+	- 0.1496 * NegativityHE 
+	- 0.1239 * PositivityHE 
+	+ 0.2358 * SentimentLM 
+	- 0.1295 * NegativityLM 
+	+ 0.0424 * PositivityLM 
+	- 0.4282 * RatioUncertaintyLM 
+	+ 0.1438 * NegativityQDAP 
+	+ 0.0759 * PositivityQDAP 
+	+ 0.04
+
+LM num: 12
+Section = 
+	-0 * WordCount 
+	+ 0.0049 * NegativityGI 
+	- 0.0382 * PositivityGI 
+	- 0.1496 * NegativityHE 
+	- 0.1239 * PositivityHE 
+	+ 0.2358 * SentimentLM 
+	- 0.1295 * NegativityLM 
+	+ 0.0424 * PositivityLM 
+	- 0.7585 * RatioUncertaintyLM 
+	+ 0.1438 * NegativityQDAP 
+	+ 0.0759 * PositivityQDAP 
+	+ 0.031
+
+LM num: 13
+Section = 
+	-0 * WordCount 
+	+ 0.0049 * NegativityGI 
+	- 0.0382 * PositivityGI 
+	- 0.1496 * NegativityHE 
+	- 0.1239 * PositivityHE 
+	+ 0.2358 * SentimentLM 
+	- 0.1295 * NegativityLM 
+	+ 0.0424 * PositivityLM 
+	- 0.2809 * RatioUncertaintyLM 
+	+ 0.1438 * NegativityQDAP 
+	+ 0.0759 * PositivityQDAP 
+	+ 0.0174
+
+LM num: 14
+Section = 
+	-0 * WordCount 
+	+ 0.0049 * NegativityGI 
+	- 0.0382 * PositivityGI 
+	- 0.1496 * NegativityHE 
+	- 0.1239 * PositivityHE 
+	+ 0.3923 * SentimentLM 
+	- 0.1295 * NegativityLM 
+	+ 0.0424 * PositivityLM 
+	- 0.0379 * RatioUncertaintyLM 
+	+ 0.1438 * NegativityQDAP 
+	+ 0.0759 * PositivityQDAP 
+	+ 0.061
+
+LM num: 15
+Section = 
+	-0 * WordCount 
+	+ 0.0049 * NegativityGI 
+	- 0.0382 * PositivityGI 
+	- 0.1496 * NegativityHE 
+	- 4.0676 * PositivityHE 
+	+ 0.3923 * SentimentLM 
+	- 0.1295 * NegativityLM 
+	+ 0.0424 * PositivityLM 
+	- 0.0379 * RatioUncertaintyLM 
+	+ 0.1438 * NegativityQDAP 
+	+ 0.0759 * PositivityQDAP 
+	+ 0.2793
+
+LM num: 16
+Section = 
+	-0 * WordCount 
+	+ 0.1364 * SentimentGI 
+	+ 0.0049 * NegativityGI 
+	- 0.0382 * PositivityGI 
+	- 0.1496 * NegativityHE 
+	- 4.0676 * PositivityHE 
+	+ 0.3923 * SentimentLM 
+	- 0.1295 * NegativityLM 
+	+ 0.0424 * PositivityLM 
+	- 0.0379 * RatioUncertaintyLM 
+	+ 0.1438 * NegativityQDAP 
+	+ 0.0759 * PositivityQDAP 
+	+ 0.2924
+
+LM num: 17
+Section = 
+	-0 * WordCount 
+	+ 0.0049 * NegativityGI 
+	- 0.0382 * PositivityGI 
+	- 0.1496 * NegativityHE 
+	- 4.0676 * PositivityHE 
+	+ 0.3923 * SentimentLM 
+	- 0.1295 * NegativityLM 
+	+ 0.0424 * PositivityLM 
+	- 0.0379 * RatioUncertaintyLM 
+	+ 0.1438 * NegativityQDAP 
+	+ 0.0759 * PositivityQDAP 
+	+ 0.2915
+
+LM num: 18
+Section = 
+	-0 * WordCount 
+	+ 0.0049 * NegativityGI 
+	- 0.0382 * PositivityGI 
+	- 0.1496 * NegativityHE 
+	- 4.0676 * PositivityHE 
+	+ 0.3923 * SentimentLM 
+	- 0.1295 * NegativityLM 
+	+ 0.0424 * PositivityLM 
+	- 0.0379 * RatioUncertaintyLM 
+	+ 0.1438 * NegativityQDAP 
+	+ 0.0759 * PositivityQDAP 
+	+ 0.3397
+
+LM num: 19
+Section = 
+	-0 * WordCount 
+	+ 0.7132 * SentimentGI 
+	- 0.9711 * NegativityGI 
+	- 0.0382 * PositivityGI 
+	- 0.1496 * NegativityHE 
+	- 4.0676 * PositivityHE 
+	+ 0.3923 * SentimentLM 
+	- 0.1295 * NegativityLM 
+	+ 0.0424 * PositivityLM 
+	- 0.0379 * RatioUncertaintyLM 
+	+ 0.1438 * NegativityQDAP 
+	+ 0.0759 * PositivityQDAP 
+	+ 0.1311
+
+LM num: 20
+Section = 
+	-0 * WordCount 
+	+ 0.976 * SentimentGI 
+	- 2.0147 * NegativityGI 
+	- 0.0382 * PositivityGI 
+	- 0.1496 * NegativityHE 
+	- 4.0676 * PositivityHE 
+	+ 0.3923 * SentimentLM 
+	- 0.1295 * NegativityLM 
+	+ 0.0424 * PositivityLM 
+	- 0.0379 * RatioUncertaintyLM 
+	+ 0.1438 * NegativityQDAP 
+	+ 0.0759 * PositivityQDAP 
+	+ 0.1444
+
+LM num: 21
+Section = 
+	-0 * WordCount 
+	+ 0.976 * SentimentGI 
+	- 2.0147 * NegativityGI 
+	- 0.0382 * PositivityGI 
+	- 0.1496 * NegativityHE 
+	- 4.0676 * PositivityHE 
+	+ 0.3923 * SentimentLM 
+	- 0.1295 * NegativityLM 
+	+ 0.0424 * PositivityLM 
+	- 0.0379 * RatioUncertaintyLM 
+	+ 0.1438 * NegativityQDAP 
+	+ 0.0759 * PositivityQDAP 
+	+ 0.1395
+
+LM num: 22
+Section = 
+	-0 * WordCount 
+	+ 0.0049 * NegativityGI 
+	- 0.0382 * PositivityGI 
+	- 0.1496 * NegativityHE 
+	- 7.1663 * PositivityHE 
+	+ 0.3923 * SentimentLM 
+	- 0.1295 * NegativityLM 
+	+ 0.0424 * PositivityLM 
+	- 0.0379 * RatioUncertaintyLM 
+	+ 0.1438 * NegativityQDAP 
+	+ 0.0759 * PositivityQDAP 
+	+ 0.2427
+
+LM num: 23
+Section = 
+	-0 * WordCount 
+	+ 0.0049 * NegativityGI 
+	- 0.0382 * PositivityGI 
+	- 0.1496 * NegativityHE 
+	- 0.1815 * PositivityHE 
+	+ 0.1051 * SentimentLM 
+	- 0.1295 * NegativityLM 
+	+ 0.0424 * PositivityLM 
+	- 0.0379 * RatioUncertaintyLM 
+	+ 0.1438 * NegativityQDAP 
+	+ 0.0585 * PositivityQDAP 
+	+ 0.0099
+
+LM num: 24
+Section = 
+	0.0004 * WordCount 
+	+ 0.0049 * NegativityGI 
+	- 1.4575 * PositivityGI 
+	- 3.3631 * NegativityHE 
+	- 2.0399 * PositivityHE 
+	- 3.6805 * NegativityLM 
+	+ 0.0817 * PositivityLM 
+	- 1.9588 * RatioUncertaintyLM 
+	+ 0.2236 * NegativityQDAP 
+	+ 2.1003 * PositivityQDAP 
+	+ 0.2364
+
+LM num: 25
+Section = 
+	-0 * WordCount 
+	+ 1.2754 * NegativityGI 
+	- 1.0957 * PositivityGI 
+	- 1.5893 * SentimentHE 
+	- 1.2555 * NegativityHE 
+	- 4.2472 * PositivityHE 
+	+ 11.7409 * NegativityLM 
+	+ 1.8213 * PositivityLM 
+	+ 2.1524 * RatioUncertaintyLM 
+	- 0.2898 * SentimentQDAP 
+	+ 0.5017 * NegativityQDAP 
+	+ 1.108 * PositivityQDAP 
+	+ 0.2755
+
+LM num: 26
+Section = 
+	-0.0017 * WordCount 
+	+ 1.2754 * NegativityGI 
+	- 1.0957 * PositivityGI 
+	- 1.5893 * SentimentHE 
+	- 1.2555 * NegativityHE 
+	- 4.9493 * PositivityHE 
+	+ 8.2468 * NegativityLM 
+	+ 1.8213 * PositivityLM 
+	+ 2.1524 * RatioUncertaintyLM 
+	- 0.2898 * SentimentQDAP 
+	+ 0.5017 * NegativityQDAP 
+	+ 1.108 * PositivityQDAP 
+	+ 0.5245
+
+LM num: 27
+Section = 
+	-0.0017 * WordCount 
+	+ 1.2754 * NegativityGI 
+	- 1.0957 * PositivityGI 
+	- 1.5893 * SentimentHE 
+	- 1.2555 * NegativityHE 
+	- 4.9493 * PositivityHE 
+	+ 8.2468 * NegativityLM 
+	+ 1.8213 * PositivityLM 
+	+ 2.1524 * RatioUncertaintyLM 
+	- 0.2898 * SentimentQDAP 
+	+ 0.5017 * NegativityQDAP 
+	+ 1.108 * PositivityQDAP 
+	+ 0.5224
+
+LM num: 28
+Section = 
+	-0 * WordCount 
+	+ 1.2754 * NegativityGI 
+	- 1.0957 * PositivityGI 
+	- 1.5893 * SentimentHE 
+	- 1.2555 * NegativityHE 
+	- 4.9493 * PositivityHE 
+	+ 8.2468 * NegativityLM 
+	+ 1.8213 * PositivityLM 
+	+ 2.1524 * RatioUncertaintyLM 
+	- 0.2898 * SentimentQDAP 
+	+ 0.5017 * NegativityQDAP 
+	+ 1.108 * PositivityQDAP 
+	+ 0.4101
+
+LM num: 29
+Section = 
+	-0 * WordCount 
+	+ 1.2754 * NegativityGI 
+	- 1.0957 * PositivityGI 
+	- 1.5893 * SentimentHE 
+	- 1.2555 * NegativityHE 
+	- 5.7551 * PositivityHE 
+	+ 8.2468 * NegativityLM 
+	+ 1.8213 * PositivityLM 
+	+ 2.1524 * RatioUncertaintyLM 
+	- 0.2898 * SentimentQDAP 
+	+ 0.5017 * NegativityQDAP 
+	+ 1.108 * PositivityQDAP 
+	+ 0.3767
+
+LM num: 30
+Section = 
+	-0 * WordCount 
+	+ 1.2754 * NegativityGI 
+	- 0.0371 * PositivityGI 
+	- 1.5893 * SentimentHE 
+	- 1.2555 * NegativityHE 
+	- 1.0503 * PositivityHE 
+	+ 1.8245 * NegativityLM 
+	+ 1.8213 * PositivityLM 
+	+ 2.8554 * RatioUncertaintyLM 
+	- 0.2898 * SentimentQDAP 
+	+ 0.5017 * NegativityQDAP 
+	+ 1.108 * PositivityQDAP 
+	+ 0.347
+
+LM num: 31
+Section = 
+	-0 * WordCount 
+	- 0.5652 * SentimentGI 
+	+ 1.411 * NegativityGI 
+	- 0.8491 * PositivityGI 
+	- 2.1394 * SentimentHE 
+	- 1.2555 * NegativityHE 
+	- 1.0503 * PositivityHE 
+	- 2.7492 * NegativityLM 
+	+ 2.3334 * PositivityLM 
+	- 0.1909 * RatioUncertaintyLM 
+	+ 0.2751 * SentimentQDAP 
+	+ 0.5017 * NegativityQDAP 
+	+ 0.5143 * PositivityQDAP 
+	+ 0.2995
+
+LM num: 32
+Section = 
+	-0 * WordCount 
+	- 0.5652 * SentimentGI 
+	+ 1.411 * NegativityGI 
+	- 0.8491 * PositivityGI 
+	- 2.1394 * SentimentHE 
+	- 1.2555 * NegativityHE 
+	- 1.0503 * PositivityHE 
+	- 2.7492 * NegativityLM 
+	+ 2.3334 * PositivityLM 
+	- 0.1909 * RatioUncertaintyLM 
+	- 0.5967 * SentimentQDAP 
+	+ 0.5017 * NegativityQDAP 
+	+ 0.5143 * PositivityQDAP 
+	+ 0.453
+
+LM num: 33
+Section = 
+	0.0004 * WordCount 
+	- 0.5652 * SentimentGI 
+	+ 1.411 * NegativityGI 
+	- 0.8491 * PositivityGI 
+	- 4.2876 * SentimentHE 
+	- 1.2555 * NegativityHE 
+	- 1.0503 * PositivityHE 
+	- 2.7492 * NegativityLM 
+	+ 3.2782 * PositivityLM 
+	- 0.1909 * RatioUncertaintyLM 
+	- 0.248 * SentimentQDAP 
+	+ 0.5017 * NegativityQDAP 
+	+ 0.5143 * PositivityQDAP 
+	+ 0.3963
+
+LM num: 34
+Section = 
+	0.0003 * WordCount 
+	- 0.5652 * SentimentGI 
+	+ 1.411 * NegativityGI 
+	- 0.8491 * PositivityGI 
+	- 4.1374 * SentimentHE 
+	- 1.2555 * NegativityHE 
+	- 1.0503 * PositivityHE 
+	- 2.7492 * NegativityLM 
+	+ 3.2782 * PositivityLM 
+	- 0.1909 * RatioUncertaintyLM 
+	- 0.248 * SentimentQDAP 
+	+ 0.5017 * NegativityQDAP 
+	+ 0.5143 * PositivityQDAP 
+	+ 0.3676
+
+LM num: 35
+Section = 
+	-0.0001 * WordCount 
+	- 0.5652 * SentimentGI 
+	+ 1.411 * NegativityGI 
+	- 0.8491 * PositivityGI 
+	- 4.1374 * SentimentHE 
+	- 1.2555 * NegativityHE 
+	- 1.0503 * PositivityHE 
+	- 2.7492 * NegativityLM 
+	+ 3.2782 * PositivityLM 
+	- 0.1909 * RatioUncertaintyLM 
+	- 0.248 * SentimentQDAP 
+	+ 0.5017 * NegativityQDAP 
+	+ 0.5143 * PositivityQDAP 
+	+ 0.4144
+
+LM num: 36
+Section = 
+	-0.0003 * WordCount 
+	- 0.5652 * SentimentGI 
+	+ 1.411 * NegativityGI 
+	- 0.8491 * PositivityGI 
+	- 4.3038 * SentimentHE 
+	- 1.2555 * NegativityHE 
+	- 1.0503 * PositivityHE 
+	- 2.7492 * NegativityLM 
+	+ 3.863 * PositivityLM 
+	- 0.1909 * RatioUncertaintyLM 
+	- 0.248 * SentimentQDAP 
+	+ 0.5017 * NegativityQDAP 
+	+ 0.5143 * PositivityQDAP 
+	+ 0.3949
+
+LM num: 37
+Section = 
+	-0 * WordCount 
+	- 0.7451 * SentimentGI 
+	+ 1.5737 * NegativityGI 
+	- 0.8491 * PositivityGI 
+	- 2.5062 * SentimentHE 
+	- 1.2555 * NegativityHE 
+	- 1.0503 * PositivityHE 
+	- 2.7492 * NegativityLM 
+	+ 2.6261 * PositivityLM 
+	- 0.1909 * RatioUncertaintyLM 
+	+ 0.4549 * SentimentQDAP 
+	+ 0.5017 * NegativityQDAP 
+	+ 0.3773 * PositivityQDAP 
+	+ 0.1668
+
+LM num: 38
+Section = 
+	-0 * WordCount 
+	+ 0.8049 * NegativityGI 
+	+ 0.3869 * PositivityGI 
+	- 0.9502 * SentimentHE 
+	- 2.568 * NegativityHE 
+	- 2.3314 * PositivityHE 
+	- 2.6559 * NegativityLM 
+	+ 1.7482 * PositivityLM 
+	- 0.1909 * RatioUncertaintyLM 
+	- 0.83 * SentimentQDAP 
+	+ 0.5017 * NegativityQDAP 
+	+ 1.5243 * PositivityQDAP 
+	- 0.0237
+
+LM num: 39
+Section = 
+	-0 * WordCount 
+	+ 0.8049 * NegativityGI 
+	+ 0.5427 * PositivityGI 
+	- 0.9502 * SentimentHE 
+	- 2.568 * NegativityHE 
+	- 2.3314 * PositivityHE 
+	- 2.6559 * NegativityLM 
+	+ 1.7482 * PositivityLM 
+	- 0.1909 * RatioUncertaintyLM 
+	- 0.83 * SentimentQDAP 
+	+ 0.5017 * NegativityQDAP 
+	+ 1.5243 * PositivityQDAP 
+	- 0.0218
+
+LM num: 40
+Section = 
+	-0 * WordCount 
+	+ 0.8049 * NegativityGI 
+	- 0.938 * PositivityGI 
+	- 0.5251 * SentimentHE 
+	- 2.568 * NegativityHE 
+	- 2.3314 * PositivityHE 
+	- 2.6559 * NegativityLM 
+	+ 1.7482 * PositivityLM 
+	- 0.1909 * RatioUncertaintyLM 
+	- 0.83 * SentimentQDAP 
+	+ 0.5017 * NegativityQDAP 
+	+ 1.5243 * PositivityQDAP 
+	+ 0.1107
+
+LM num: 41
+Section = 
+	-0 * WordCount 
+	+ 0.0049 * NegativityGI 
+	- 0.011 * PositivityGI 
+	- 0.1132 * NegativityHE 
+	- 0.061 * PositivityHE 
+	- 0.0636 * NegativityLM 
+	+ 0.0062 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	+ 0.0852 * NegativityQDAP 
+	+ 0.0351 * PositivityQDAP 
+	+ 0.0029
+
+LM num: 42
+Section = 
+	-0 * WordCount 
+	+ 0.0049 * NegativityGI 
+	- 0.011 * PositivityGI 
+	- 0.7331 * NegativityHE 
+	- 0.061 * PositivityHE 
+	- 0.0636 * NegativityLM 
+	+ 0.0062 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	+ 0.1374 * NegativityQDAP 
+	+ 0.0351 * PositivityQDAP 
+	+ 0.1141
+
+LM num: 43
+Section = 
+	-0 * WordCount 
+	+ 0.0049 * NegativityGI 
+	- 0.011 * PositivityGI 
+	- 0.7331 * NegativityHE 
+	- 0.061 * PositivityHE 
+	- 0.0636 * NegativityLM 
+	+ 0.0062 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	- 1.0992 * NegativityQDAP 
+	+ 0.0351 * PositivityQDAP 
+	+ 0.2992
+
+LM num: 44
+Section = 
+	-0 * WordCount 
+	+ 0.0049 * NegativityGI 
+	- 0.011 * PositivityGI 
+	- 0.7331 * NegativityHE 
+	- 0.061 * PositivityHE 
+	- 0.0636 * NegativityLM 
+	+ 0.0062 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	- 1.172 * NegativityQDAP 
+	+ 0.0351 * PositivityQDAP 
+	+ 0.303
+
+LM num: 45
+Section = 
+	-0 * WordCount 
+	+ 0.0049 * NegativityGI 
+	- 0.011 * PositivityGI 
+	- 0.7331 * NegativityHE 
+	- 0.061 * PositivityHE 
+	- 0.0636 * NegativityLM 
+	+ 0.0062 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	+ 0.1374 * NegativityQDAP 
+	+ 0.0351 * PositivityQDAP 
+	+ 0.0675
+
+LM num: 46
+Section = 
+	-0 * WordCount 
+	+ 0.0049 * NegativityGI 
+	- 0.011 * PositivityGI 
+	- 0.4923 * NegativityHE 
+	- 0.061 * PositivityHE 
+	- 0.0636 * NegativityLM 
+	+ 0.0062 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	+ 0.1374 * NegativityQDAP 
+	+ 0.0351 * PositivityQDAP 
+	+ 0.0169
+
+LM num: 47
+Section = 
+	-0 * WordCount 
+	+ 0.0049 * NegativityGI 
+	- 0.011 * PositivityGI 
+	+ 1.9883 * SentimentHE 
+	- 0.0967 * NegativityHE 
+	- 3.8656 * PositivityHE 
+	- 1.8961 * NegativityLM 
+	+ 0.0062 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	+ 2.0004 * NegativityQDAP 
+	+ 0.0245 * PositivityQDAP 
+	+ 0.1536
+
+LM num: 48
+Section = 
+	0.0004 * WordCount 
+	+ 0.0251 * NegativityGI 
+	- 0.011 * PositivityGI 
+	- 0.0663 * NegativityHE 
+	- 0.0617 * PositivityHE 
+	- 0.0539 * NegativityLM 
+	+ 0.0062 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	+ 0.0503 * NegativityQDAP 
+	+ 0.0245 * PositivityQDAP 
+	- 0.0173
+
+LM num: 49
+Section = 
+	0 * WordCount 
+	+ 0.0305 * NegativityGI 
+	- 0.011 * PositivityGI 
+	+ 0.6052 * SentimentHE 
+	- 0.0663 * NegativityHE 
+	- 0.0617 * PositivityHE 
+	- 0.0539 * NegativityLM 
+	+ 0.0062 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	+ 0.0503 * NegativityQDAP 
+	+ 0.0245 * PositivityQDAP 
+	+ 0.0208
+
+LM num: 50
+Section = 
+	0 * WordCount 
+	+ 0.0305 * NegativityGI 
+	- 0.011 * PositivityGI 
+	+ 7.8262 * SentimentHE 
+	- 0.0663 * NegativityHE 
+	- 0.0617 * PositivityHE 
+	- 0.0539 * NegativityLM 
+	+ 0.0062 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	+ 0.0503 * NegativityQDAP 
+	+ 0.0245 * PositivityQDAP 
+	+ 0.0006
+
+LM num: 51
+Section = 
+	0 * WordCount 
+	+ 0.2919 * SentimentGI 
+	+ 0.0305 * NegativityGI 
+	- 0.011 * PositivityGI 
+	- 0.0663 * NegativityHE 
+	+ 3.6407 * PositivityHE 
+	- 1.8126 * NegativityLM 
+	- 1.0114 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	+ 0.0503 * NegativityQDAP 
+	+ 0.0245 * PositivityQDAP 
+	+ 0.1894
+
+LM num: 52
+Section = 
+	0 * WordCount 
+	+ 0.2919 * SentimentGI 
+	+ 0.0305 * NegativityGI 
+	- 0.011 * PositivityGI 
+	- 0.0663 * NegativityHE 
+	+ 3.6407 * PositivityHE 
+	- 0.9528 * NegativityLM 
+	- 0.5139 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	+ 0.0503 * NegativityQDAP 
+	+ 0.0245 * PositivityQDAP 
+	+ 0.0942
+
+LM num: 53
+Section = 
+	0 * WordCount 
+	+ 0.3191 * SentimentGI 
+	- 0.8957 * NegativityGI 
+	- 0.011 * PositivityGI 
+	- 2.9302 * NegativityHE 
+	+ 16.7834 * PositivityHE 
+	+ 2.1733 * NegativityLM 
+	+ 0.0062 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	+ 0.0503 * NegativityQDAP 
+	+ 0.0245 * PositivityQDAP 
+	+ 0.0322
+
+LM num: 54
+Section = 
+	0 * WordCount 
+	+ 0.3191 * SentimentGI 
+	- 0.5157 * NegativityGI 
+	- 0.011 * PositivityGI 
+	- 4.3459 * NegativityHE 
+	+ 19.3148 * PositivityHE 
+	+ 1.2596 * NegativityLM 
+	+ 0.0062 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	+ 0.0503 * NegativityQDAP 
+	+ 0.8677 * PositivityQDAP 
+	- 0.0308
+
+LM num: 55
+Section = 
+	0 * WordCount 
+	+ 0.3191 * SentimentGI 
+	- 0.5157 * NegativityGI 
+	- 0.011 * PositivityGI 
+	- 5.2883 * NegativityHE 
+	+ 20.3587 * PositivityHE 
+	+ 2.6853 * NegativityLM 
+	+ 0.0062 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	+ 0.0503 * NegativityQDAP 
+	+ 0.5611 * PositivityQDAP 
+	- 0.0424
+
+LM num: 56
+Section = 
+	0 * WordCount 
+	+ 0.3191 * SentimentGI 
+	- 0.5157 * NegativityGI 
+	- 0.011 * PositivityGI 
+	- 5.9736 * NegativityHE 
+	+ 22.2089 * PositivityHE 
+	+ 2.1937 * NegativityLM 
+	+ 0.0062 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	+ 0.0503 * NegativityQDAP 
+	+ 0.5611 * PositivityQDAP 
+	+ 0.0021
+
+LM num: 57
+Section = 
+	0 * WordCount 
+	+ 0.3191 * SentimentGI 
+	- 0.315 * NegativityGI 
+	- 0.011 * PositivityGI 
+	- 5.5628 * NegativityHE 
+	+ 22.6077 * PositivityHE 
+	+ 2.1937 * NegativityLM 
+	+ 0.0062 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	+ 0.0503 * NegativityQDAP 
+	+ 0.5611 * PositivityQDAP 
+	- 0.0315
+
+LM num: 58
+Section = 
+	0 * WordCount 
+	+ 0.3191 * SentimentGI 
+	- 0.2438 * NegativityGI 
+	- 0.011 * PositivityGI 
+	- 5.5628 * NegativityHE 
+	+ 22.542 * PositivityHE 
+	+ 2.1937 * NegativityLM 
+	+ 0.0062 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	+ 0.0503 * NegativityQDAP 
+	+ 0.5611 * PositivityQDAP 
+	- 0.0337
+
+LM num: 59
+Section = 
+	0 * WordCount 
+	+ 0.3191 * SentimentGI 
+	- 0.2523 * NegativityGI 
+	- 0.011 * PositivityGI 
+	- 5.5628 * NegativityHE 
+	+ 22.542 * PositivityHE 
+	+ 2.1937 * NegativityLM 
+	+ 0.0062 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	+ 0.0503 * NegativityQDAP 
+	+ 0.5611 * PositivityQDAP 
+	- 0.032
+
+LM num: 60
+Section = 
+	0 * WordCount 
+	+ 0.1723 * SentimentGI 
+	+ 0.0305 * NegativityGI 
+	- 0.011 * PositivityGI 
+	- 0.0663 * NegativityHE 
+	+ 0.9448 * PositivityHE 
+	- 0.0539 * NegativityLM 
+	+ 0.0062 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	+ 0.0503 * NegativityQDAP 
+	+ 0.0245 * PositivityQDAP 
+	+ 0.0363
+
+LM num: 61
+Section = 
+	0 * WordCount 
+	+ 0.0305 * NegativityGI 
+	- 0.011 * PositivityGI 
+	- 0.0663 * NegativityHE 
+	+ 71.6936 * PositivityHE 
+	+ 2.5526 * NegativityLM 
+	+ 0.0062 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	+ 0.0503 * NegativityQDAP 
+	+ 0.0245 * PositivityQDAP 
+	- 0.8343
+
+LM num: 62
+Section = 
+	0 * WordCount 
+	+ 0.0305 * NegativityGI 
+	- 0.011 * PositivityGI 
+	- 0.0663 * NegativityHE 
+	+ 78.3465 * PositivityHE 
+	+ 1.6838 * NegativityLM 
+	+ 0.0062 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	- 0.5212 * SentimentQDAP 
+	+ 0.0503 * NegativityQDAP 
+	+ 0.0245 * PositivityQDAP 
+	- 0.8294
+
+LM num: 63
+Section = 
+	0 * WordCount 
+	+ 0.0305 * NegativityGI 
+	- 0.011 * PositivityGI 
+	- 0.0663 * NegativityHE 
+	+ 85.7663 * PositivityHE 
+	+ 1.6838 * NegativityLM 
+	+ 0.0062 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	+ 0.0503 * NegativityQDAP 
+	+ 0.0245 * PositivityQDAP 
+	- 0.903
+
+LM num: 64
+Section = 
+	0 * WordCount 
+	+ 0.0305 * NegativityGI 
+	- 0.011 * PositivityGI 
+	- 0.0663 * NegativityHE 
+	+ 2.6142 * PositivityHE 
+	- 0.0539 * NegativityLM 
+	+ 0.0062 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	+ 0.0503 * NegativityQDAP 
+	+ 0.0245 * PositivityQDAP 
+	+ 0.1192
+
+LM num: 65
+Section = 
+	0 * WordCount 
+	+ 0.0305 * NegativityGI 
+	- 0.011 * PositivityGI 
+	- 0.0663 * NegativityHE 
+	- 0.0617 * PositivityHE 
+	- 1.6552 * SentimentLM 
+	- 0.0539 * NegativityLM 
+	+ 0.0062 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	+ 0.0503 * NegativityQDAP 
+	+ 0.0245 * PositivityQDAP 
+	- 0.0125
+
+LM num: 66
+Section = 
+	0 * WordCount 
+	- 3.5397 * NegativityGI 
+	- 0.011 * PositivityGI 
+	- 0.0663 * NegativityHE 
+	- 0.0617 * PositivityHE 
+	- 0.0539 * NegativityLM 
+	+ 0.0062 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	- 1.2569 * SentimentQDAP 
+	+ 0.0503 * NegativityQDAP 
+	+ 0.0245 * PositivityQDAP 
+	+ 0.4463
+
+LM num: 67
+Section = 
+	0 * WordCount 
+	- 2.4985 * NegativityGI 
+	- 0.011 * PositivityGI 
+	- 0.0663 * NegativityHE 
+	- 0.0617 * PositivityHE 
+	- 0.0539 * NegativityLM 
+	+ 0.0062 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	- 0.5465 * SentimentQDAP 
+	+ 0.0503 * NegativityQDAP 
+	+ 0.0245 * PositivityQDAP 
+	+ 0.2467
+
+LM num: 68
+Section = 
+	0 * WordCount 
+	- 0.1093 * NegativityGI 
+	- 0.011 * PositivityGI 
+	- 0.0663 * NegativityHE 
+	- 0.0617 * PositivityHE 
+	- 0.0539 * NegativityLM 
+	+ 0.0062 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	- 0.0499 * SentimentQDAP 
+	+ 0.0503 * NegativityQDAP 
+	+ 0.0245 * PositivityQDAP 
+	+ 0.0229
+
+LM num: 69
+Section = 
+	-0 * WordCount 
+	+ 0.0049 * NegativityGI 
+	- 0.011 * PositivityGI 
+	+ 0.1024 * SentimentHE 
+	- 0.0663 * NegativityHE 
+	- 0.2028 * PositivityHE 
+	- 0.0508 * SentimentLM 
+	- 0.0539 * NegativityLM 
+	+ 0.0734 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	+ 0.0503 * NegativityQDAP 
+	+ 0.0245 * PositivityQDAP 
+	+ 0.0056
+
+LM num: 70
+Section = 
+	-0 * WordCount 
+	- 0.109 * SentimentGI 
+	+ 0.0049 * NegativityGI 
+	- 0.011 * PositivityGI 
+	+ 0.0563 * SentimentHE 
+	- 0.0663 * NegativityHE 
+	- 0.2406 * PositivityHE 
+	- 0.5221 * SentimentLM 
+	- 0.0539 * NegativityLM 
+	+ 1.0131 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	+ 0.0503 * NegativityQDAP 
+	+ 0.0245 * PositivityQDAP 
+	- 0.0087
+
+LM num: 71
+Section = 
+	-0 * WordCount 
+	- 0.1494 * SentimentGI 
+	+ 0.0049 * NegativityGI 
+	- 0.011 * PositivityGI 
+	+ 0.0563 * SentimentHE 
+	- 0.0663 * NegativityHE 
+	- 0.2406 * PositivityHE 
+	- 0.804 * SentimentLM 
+	- 0.0539 * NegativityLM 
+	+ 1.0632 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	+ 0.0503 * NegativityQDAP 
+	+ 0.0245 * PositivityQDAP 
+	+ 0.029
+
+LM num: 72
+Section = 
+	-0 * WordCount 
+	- 4.7861 * SentimentGI 
+	+ 0.0049 * NegativityGI 
+	- 0.011 * PositivityGI 
+	+ 0.0563 * SentimentHE 
+	- 0.0663 * NegativityHE 
+	- 0.2406 * PositivityHE 
+	- 3.8242 * SentimentLM 
+	- 0.0539 * NegativityLM 
+	+ 1.0632 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	+ 0.0503 * NegativityQDAP 
+	+ 0.0245 * PositivityQDAP 
+	+ 0.2764
+
+LM num: 73
+Section = 
+	-0 * WordCount 
+	- 4.7861 * SentimentGI 
+	+ 0.0049 * NegativityGI 
+	- 0.011 * PositivityGI 
+	+ 0.0563 * SentimentHE 
+	- 0.0663 * NegativityHE 
+	- 0.2406 * PositivityHE 
+	- 3.8242 * SentimentLM 
+	- 0.0539 * NegativityLM 
+	+ 1.0632 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	+ 0.0503 * NegativityQDAP 
+	+ 0.0245 * PositivityQDAP 
+	+ 0.2727
+
+LM num: 74
+Section = 
+	-0 * WordCount 
+	- 4.1538 * SentimentGI 
+	+ 0.0049 * NegativityGI 
+	- 0.011 * PositivityGI 
+	+ 0.0563 * SentimentHE 
+	- 0.0663 * NegativityHE 
+	- 0.2406 * PositivityHE 
+	- 2.1087 * SentimentLM 
+	- 0.0539 * NegativityLM 
+	+ 1.0632 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	+ 0.0503 * NegativityQDAP 
+	+ 0.0245 * PositivityQDAP 
+	+ 0.2672
+
+LM num: 75
+Section = 
+	-0 * WordCount 
+	- 0.9088 * SentimentGI 
+	+ 0.0049 * NegativityGI 
+	- 0.011 * PositivityGI 
+	+ 0.0563 * SentimentHE 
+	- 0.0663 * NegativityHE 
+	- 0.2406 * PositivityHE 
+	- 0.804 * SentimentLM 
+	- 0.0539 * NegativityLM 
+	+ 1.0632 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	+ 0.0503 * NegativityQDAP 
+	+ 0.0245 * PositivityQDAP 
+	+ 0.1771
+
+LM num: 76
+Section = 
+	-0 * WordCount 
+	- 0.9088 * SentimentGI 
+	+ 0.0049 * NegativityGI 
+	- 0.011 * PositivityGI 
+	+ 0.0563 * SentimentHE 
+	- 0.0663 * NegativityHE 
+	- 0.2406 * PositivityHE 
+	- 0.804 * SentimentLM 
+	- 0.0539 * NegativityLM 
+	+ 1.0632 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	+ 0.0503 * NegativityQDAP 
+	+ 0.0245 * PositivityQDAP 
+	+ 0.1622
+
+LM num: 77
+Section = 
+	-0 * WordCount 
+	- 0.9088 * SentimentGI 
+	+ 0.0049 * NegativityGI 
+	- 0.011 * PositivityGI 
+	+ 0.0563 * SentimentHE 
+	- 0.0663 * NegativityHE 
+	- 0.2406 * PositivityHE 
+	- 0.804 * SentimentLM 
+	- 0.0539 * NegativityLM 
+	+ 1.0632 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	+ 0.0503 * NegativityQDAP 
+	+ 0.0245 * PositivityQDAP 
+	+ 0.1662
+
+LM num: 78
+Section = 
+	-0 * WordCount 
+	- 1.0607 * SentimentGI 
+	+ 0.0049 * NegativityGI 
+	- 0.011 * PositivityGI 
+	+ 0.0563 * SentimentHE 
+	- 0.0663 * NegativityHE 
+	- 0.2406 * PositivityHE 
+	- 0.804 * SentimentLM 
+	- 0.0539 * NegativityLM 
+	+ 1.0632 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	+ 0.0503 * NegativityQDAP 
+	+ 0.0245 * PositivityQDAP 
+	+ 0.1341
+
+LM num: 79
+Section = 
+	-0 * WordCount 
+	- 0.1223 * SentimentGI 
+	- 1.7207 * NegativityGI 
+	- 0.011 * PositivityGI 
+	+ 0.0563 * SentimentHE 
+	- 0.0663 * NegativityHE 
+	- 0.2406 * PositivityHE 
+	- 1.7078 * SentimentLM 
+	- 0.0539 * NegativityLM 
+	+ 0.9207 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	+ 0.0503 * NegativityQDAP 
+	+ 0.0245 * PositivityQDAP 
+	+ 0.1883
+
+LM num: 80
+Section = 
+	-0 * WordCount 
+	- 0.1223 * SentimentGI 
+	- 1.3059 * NegativityGI 
+	- 0.011 * PositivityGI 
+	+ 0.0563 * SentimentHE 
+	- 0.0663 * NegativityHE 
+	- 0.2406 * PositivityHE 
+	- 1.7078 * SentimentLM 
+	- 0.0539 * NegativityLM 
+	+ 0.9207 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	+ 0.0503 * NegativityQDAP 
+	+ 0.0245 * PositivityQDAP 
+	+ 0.1133
+
+LM num: 81
+Section = 
+	-0 * WordCount 
+	- 0.1223 * SentimentGI 
+	- 0.1585 * NegativityGI 
+	- 0.011 * PositivityGI 
+	+ 0.0563 * SentimentHE 
+	- 0.0663 * NegativityHE 
+	- 0.2406 * PositivityHE 
+	- 1.1186 * SentimentLM 
+	- 0.0539 * NegativityLM 
+	+ 0.9207 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	+ 0.0503 * NegativityQDAP 
+	+ 0.0245 * PositivityQDAP 
+	+ 0.0025
+
+LM num: 82
+Section = 
+	-0 * WordCount 
+	+ 0.0049 * NegativityGI 
+	- 0.011 * PositivityGI 
+	+ 0.0563 * SentimentHE 
+	- 0.0663 * NegativityHE 
+	- 0.2725 * PositivityHE 
+	- 0.1426 * SentimentLM 
+	- 0.0539 * NegativityLM 
+	+ 0.2016 * PositivityLM 
+	- 0.0069 * RatioUncertaintyLM 
+	+ 0.0503 * NegativityQDAP 
+	+ 0.0245 * PositivityQDAP 
+	+ 0.0059
+
+Number of Rules : 82
+
+
+
+Time taken to build model: 10.56 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        4264               55.8993 %
+Incorrectly Classified Instances      3364               44.1007 %
+Kappa statistic                          0.382 
+Mean absolute error                      0.294 
+Root mean squared error                  0.3815
+Relative absolute error                 80.6934 %
+Root relative squared error             89.3818 %
+Total Number of Instances             7628     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.437    0.052    0.621      0.437    0.513      0.446    0.805     0.558     SECTION3
+                 0.391    0.103    0.519      0.391    0.446      0.321    0.747     0.464     SECTION0
+                 0.653    0.328    0.532      0.653    0.586      0.315    0.718     0.577     SECTION1
+                 0.650    0.145    0.602      0.650    0.625      0.492    0.842     0.631     SECTION2
+Weighted Avg.    0.559    0.187    0.561      0.559    0.553      0.382    0.770     0.563     
+
+=== Confusion Matrix ===
+
+    a    b    c    d   <-- classified as
+  544  132  406  164 |    a = SECTION3
+  103  660  705  218 |    b = SECTION0
+  163  353 1810  446 |    c = SECTION1
+   66  127  481 1250 |    d = SECTION2
+
