@@ -1,0 +1,207 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Relation:     train_processed
+Instances:    7628
+Attributes:   15
+              WordCount
+              SentimentGI
+              NegativityGI
+              PositivityGI
+              SentimentHE
+              NegativityHE
+              PositivityHE
+              SentimentLM
+              NegativityLM
+              PositivityLM
+              RatioUncertaintyLM
+              SentimentQDAP
+              NegativityQDAP
+              PositivityQDAP
+              Section
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: SECTION3, SECTION0
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         4.1983 * (normalized) WordCount
+ +       0.171  * (normalized) SentimentGI
+ +      -1.8716 * (normalized) NegativityGI
+ +      -1.2694 * (normalized) PositivityGI
+ +       0.4977 * (normalized) SentimentHE
+ +      -8.6609 * (normalized) NegativityHE
+ +      -5.8515 * (normalized) PositivityHE
+ +       0.0188 * (normalized) SentimentLM
+ +       0.7133 * (normalized) NegativityLM
+ +       0.7336 * (normalized) PositivityLM
+ +      -2.9032 * (normalized) RatioUncertaintyLM
+ +       0.3467 * (normalized) SentimentQDAP
+ +       1.4732 * (normalized) NegativityQDAP
+ +       1.5599 * (normalized) PositivityQDAP
+ +       0.2828
+
+Number of kernel evaluations: 189424 (66.901% cached)
+
+Classifier for classes: SECTION3, SECTION1
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         1.568  * (normalized) WordCount
+ +       0.6701 * (normalized) SentimentGI
+ +      -0.7575 * (normalized) NegativityGI
+ +       0.2875 * (normalized) PositivityGI
+ +      -0.4728 * (normalized) SentimentHE
+ +      -5.9879 * (normalized) NegativityHE
+ +      -5.4978 * (normalized) PositivityHE
+ +       0.4405 * (normalized) SentimentLM
+ +      -0.6721 * (normalized) NegativityLM
+ +       0.1596 * (normalized) PositivityLM
+ +      -0.4156 * (normalized) RatioUncertaintyLM
+ +       0.7107 * (normalized) SentimentQDAP
+ +       0.056  * (normalized) NegativityQDAP
+ +       1.2218 * (normalized) PositivityQDAP
+ +       0.4425
+
+Number of kernel evaluations: 312648 (69.224% cached)
+
+Classifier for classes: SECTION3, SECTION2
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -7.0558 * (normalized) WordCount
+ +      -0.7922 * (normalized) SentimentGI
+ +       0.0076 * (normalized) NegativityGI
+ +      -1.0501 * (normalized) PositivityGI
+ +       0.0313 * (normalized) SentimentHE
+ +      -7.752  * (normalized) NegativityHE
+ +      -5.9737 * (normalized) PositivityHE
+ +       1.16   * (normalized) SentimentLM
+ +      -1.205  * (normalized) NegativityLM
+ +       0.9739 * (normalized) PositivityLM
+ +      -1.1465 * (normalized) RatioUncertaintyLM
+ +       0.9277 * (normalized) SentimentQDAP
+ +       2.057  * (normalized) NegativityQDAP
+ +       2.9174 * (normalized) PositivityQDAP
+ +       0.5499
+
+Number of kernel evaluations: 234652 (70.12% cached)
+
+Classifier for classes: SECTION0, SECTION1
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -2.2781 * (normalized) WordCount
+ +       0.5961 * (normalized) SentimentGI
+ +       1.2648 * (normalized) NegativityGI
+ +       1.8068 * (normalized) PositivityGI
+ +      -1.6465 * (normalized) SentimentHE
+ +       2.0633 * (normalized) NegativityHE
+ +      -1.3223 * (normalized) PositivityHE
+ +       0.6937 * (normalized) SentimentLM
+ +      -2.2064 * (normalized) NegativityLM
+ +      -0.8729 * (normalized) PositivityLM
+ +       1.5723 * (normalized) RatioUncertaintyLM
+ +       1.1243 * (normalized) SentimentQDAP
+ +      -2.5468 * (normalized) NegativityQDAP
+ +       0.176  * (normalized) PositivityQDAP
+ +       0.5378
+
+Number of kernel evaluations: 325962 (68.122% cached)
+
+Classifier for classes: SECTION0, SECTION2
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+       -15.0042 * (normalized) WordCount
+ +      -1.0541 * (normalized) SentimentGI
+ +       1.0309 * (normalized) NegativityGI
+ +      -0.5807 * (normalized) PositivityGI
+ +      -0.5726 * (normalized) SentimentHE
+ +      -1.1874 * (normalized) NegativityHE
+ +      -1.9415 * (normalized) PositivityHE
+ +       1.3325 * (normalized) SentimentLM
+ +      -2.5603 * (normalized) NegativityLM
+ +      -0.0334 * (normalized) PositivityLM
+ +       0.4464 * (normalized) RatioUncertaintyLM
+ +       0.9607 * (normalized) SentimentQDAP
+ +       1.2877 * (normalized) NegativityQDAP
+ +       2.4597 * (normalized) PositivityQDAP
+ +       0.8862
+
+Number of kernel evaluations: 368360 (66.554% cached)
+
+Classifier for classes: SECTION1, SECTION2
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+       -12.2583 * (normalized) WordCount
+ +      -2.0341 * (normalized) SentimentGI
+ +       0.9214 * (normalized) NegativityGI
+ +      -1.975  * (normalized) PositivityGI
+ +       1.0716 * (normalized) SentimentHE
+ +      -2.9583 * (normalized) NegativityHE
+ +      -0.3959 * (normalized) PositivityHE
+ +       0.6625 * (normalized) SentimentLM
+ +      -1.5432 * (normalized) NegativityLM
+ +      -0.2814 * (normalized) PositivityLM
+ +      -1.716  * (normalized) RatioUncertaintyLM
+ +       0.614  * (normalized) SentimentQDAP
+ +       3.7101 * (normalized) NegativityQDAP
+ +       3.4967 * (normalized) PositivityQDAP
+ -       0.001 
+
+Number of kernel evaluations: 495456 (66.061% cached)
+
+
+
+Time taken to build model: 1.9 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3993               52.3466 %
+Incorrectly Classified Instances      3635               47.6534 %
+Kappa statistic                          0.3146
+Mean absolute error                      0.3122
+Root mean squared error                  0.3992
+Relative absolute error                 85.6765 %
+Root relative squared error             93.5194 %
+Total Number of Instances             7628     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.406    0.046    0.633      0.406    0.495      0.435    0.745     0.421     SECTION3
+                 0.212    0.056    0.519      0.212    0.301      0.226    0.696     0.356     SECTION0
+                 0.757    0.482    0.473      0.757    0.582      0.268    0.642     0.451     SECTION1
+                 0.536    0.118    0.606      0.536    0.569      0.436    0.798     0.507     SECTION2
+Weighted Avg.    0.523    0.225    0.543      0.523    0.502      0.329    0.710     0.439     
+
+=== Confusion Matrix ===
+
+    a    b    c    d   <-- classified as
+  506   77  540  123 |    a = SECTION3
+   77  358 1066  185 |    b = SECTION0
+  130  181 2098  363 |    c = SECTION1
+   86   74  733 1031 |    d = SECTION2
+

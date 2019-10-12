@@ -1,0 +1,244 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.MultiClassClassifier -M 0 -R 2.0 -S 1 -W weka.classifiers.functions.Logistic -- -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     train_processed
+Instances:    7628
+Attributes:   15
+              WordCount
+              SentimentGI
+              NegativityGI
+              PositivityGI
+              SentimentHE
+              NegativityHE
+              PositivityHE
+              SentimentLM
+              NegativityLM
+              PositivityLM
+              RatioUncertaintyLM
+              SentimentQDAP
+              NegativityQDAP
+              PositivityQDAP
+              Section
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+MultiClassClassifier
+
+Classifier 1, using indicator values: Strings: 1 
+Invert: false
+Cols: 1
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                             Class
+Variable              neg_SECTION3
+==================================
+WordCount                   0.0014
+SentimentGI              8099.0135
+NegativityGI             8096.3267
+PositivityGI            -8101.6723
+SentimentHE            -14207.3096
+NegativityHE           -14253.6419
+PositivityHE            14177.2696
+SentimentLM            105503.4868
+NegativityLM           105499.2035
+PositivityLM           -105498.021
+RatioUncertaintyLM         -8.2483
+SentimentQDAP           -5548.3916
+NegativityQDAP          -5543.9179
+PositivityQDAP           5558.2959
+Intercept                   2.2037
+
+
+Odds Ratios...
+                             Class
+Variable              neg_SECTION3
+==================================
+WordCount                   1.0014
+SentimentGI               Infinity
+NegativityGI              Infinity
+PositivityGI                     0
+SentimentHE                      0
+NegativityHE                     0
+PositivityHE              Infinity
+SentimentLM               Infinity
+NegativityLM              Infinity
+PositivityLM                     0
+RatioUncertaintyLM          0.0003
+SentimentQDAP                    0
+NegativityQDAP                   0
+PositivityQDAP            Infinity
+
+
+Classifier 2, using indicator values: Strings: 2 
+Invert: false
+Cols: 2
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                             Class
+Variable              neg_SECTION0
+==================================
+WordCount                  -0.0114
+SentimentGI             -61758.141
+NegativityGI           -61753.0743
+PositivityGI            61760.6048
+SentimentHE            -67176.4833
+NegativityHE           -67152.5551
+PositivityHE             67175.632
+SentimentLM            -32149.8332
+NegativityLM           -32161.0213
+PositivityLM            32148.8809
+RatioUncertaintyLM          10.724
+SentimentQDAP            -9233.997
+NegativityQDAP          -9238.4798
+PositivityQDAP           9236.1935
+Intercept                   1.5595
+
+
+Odds Ratios...
+                             Class
+Variable              neg_SECTION0
+==================================
+WordCount                   0.9887
+SentimentGI                      0
+NegativityGI                     0
+PositivityGI              Infinity
+SentimentHE                      0
+NegativityHE                     0
+PositivityHE              Infinity
+SentimentLM                      0
+NegativityLM                     0
+PositivityLM              Infinity
+RatioUncertaintyLM      45435.3388
+SentimentQDAP                    0
+NegativityQDAP                   0
+PositivityQDAP            Infinity
+
+
+Classifier 3, using indicator values: Strings: 3 
+Invert: false
+Cols: 3
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                             Class
+Variable              neg_SECTION1
+==================================
+WordCount                  -0.0052
+SentimentGI             41371.6917
+NegativityGI            41373.3422
+PositivityGI           -41376.7365
+SentimentHE             55258.2662
+NegativityHE            55261.0295
+PositivityHE           -55245.0472
+SentimentLM            -47335.2852
+NegativityLM           -47333.8307
+PositivityLM            47335.1165
+RatioUncertaintyLM         -7.1262
+SentimentQDAP           -7064.6721
+NegativityQDAP          -7055.3809
+PositivityQDAP           7066.4756
+Intercept                   0.7573
+
+
+Odds Ratios...
+                             Class
+Variable              neg_SECTION1
+==================================
+WordCount                   0.9948
+SentimentGI               Infinity
+NegativityGI              Infinity
+PositivityGI                     0
+SentimentHE               Infinity
+NegativityHE              Infinity
+PositivityHE                     0
+SentimentLM                      0
+NegativityLM                     0
+PositivityLM              Infinity
+RatioUncertaintyLM          0.0008
+SentimentQDAP                    0
+NegativityQDAP                   0
+PositivityQDAP            Infinity
+
+
+Classifier 4, using indicator values: Strings: 4 
+Invert: false
+Cols: 4
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                                     Class
+Variable                      neg_SECTION2
+==========================================
+WordCount                           0.0316
+SentimentGI                         2.4153
+NegativityGI                       -1.5091
+PositivityGI                         2.634
+SentimentHE                        -0.5374
+NegativityHE                         27.29
+PositivityHE                       10.2713
+SentimentLM                        -4.1009
+NegativityLM                        6.9698
+PositivityLM                         2.302
+RatioUncertaintyLM                   5.724
+SentimentQDAP                      -1.4154
+NegativityQDAP                    -10.4988
+PositivityQDAP                     -7.8683
+Intercept                          -0.2747
+
+
+Odds Ratios...
+                                     Class
+Variable                      neg_SECTION2
+==========================================
+WordCount                           1.0321
+SentimentGI                        11.1926
+NegativityGI                        0.2211
+PositivityGI                       13.9293
+SentimentHE                         0.5843
+NegativityHE          7.110740994251615E11
+PositivityHE                    28892.3339
+SentimentLM                         0.0166
+NegativityLM                     1064.0598
+PositivityLM                        9.9939
+RatioUncertaintyLM                306.1178
+SentimentQDAP                       0.2428
+NegativityQDAP                           0
+PositivityQDAP                      0.0004
+
+
+
+
+Time taken to build model: 1.68 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        4090               53.6182 %
+Incorrectly Classified Instances      3538               46.3818 %
+Kappa statistic                          0.3423
+Mean absolute error                      0.3083
+Root mean squared error                  0.3873
+Relative absolute error                 84.5961 %
+Root relative squared error             90.7446 %
+Total Number of Instances             7628     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.446    0.056    0.608      0.446    0.515      0.444    0.806     0.540     SECTION3
+                 0.275    0.073    0.517      0.275    0.359      0.260    0.741     0.446     SECTION0
+                 0.700    0.405    0.497      0.700    0.581      0.284    0.701     0.558     SECTION1
+                 0.587    0.137    0.592      0.587    0.589      0.452    0.823     0.617     SECTION2
+Weighted Avg.    0.536    0.207    0.543      0.536    0.523      0.347    0.758     0.545     
+
+=== Confusion Matrix ===
+
+    a    b    c    d   <-- classified as
+  556   94  447  149 |    a = SECTION3
+  103  464  911  208 |    b = SECTION0
+  170  239 1940  423 |    c = SECTION1
+   86  101  607 1130 |    d = SECTION2
+
