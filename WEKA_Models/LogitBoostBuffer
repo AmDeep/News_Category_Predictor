@@ -1,0 +1,510 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.LogitBoost -P 100 -L -1.7976931348623157E308 -H 1.0 -Z 3.0 -O 1 -E 1 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+Relation:     train_processed
+Instances:    7628
+Attributes:   15
+              WordCount
+              SentimentGI
+              NegativityGI
+              PositivityGI
+              SentimentHE
+              NegativityHE
+              PositivityHE
+              SentimentLM
+              NegativityLM
+              PositivityLM
+              RatioUncertaintyLM
+              SentimentQDAP
+              NegativityQDAP
+              PositivityQDAP
+              Section
+Test mode:    15-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+LogitBoost: Base classifiers and their weights: 
+
+Iteration 1
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+NegativityHE <= 0.018434 : -0.7053387080916004
+NegativityHE > 0.018434 : 0.9957761351639051
+NegativityHE is missing : -0.4382925818483027
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+WordCount <= 56.5 : -0.6110561934453359
+WordCount > 56.5 : 0.39408004203516583
+WordCount is missing : -0.14391534391533073
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.0395785 : 0.9640416047547622
+NegativityQDAP > 0.0395785 : 0.07084289931124711
+NegativityQDAP is missing : 0.5394449641408761
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+WordCount <= 34.5 : 1.264874072271449
+WordCount > 34.5 : -0.6102839230815844
+WordCount is missing : 0.010964205095128843
+
+
+Iteration 2
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityHE <= 0.0288115 : -0.398385799689959
+PositivityHE > 0.0288115 : 0.8152849797061268
+PositivityHE is missing : -0.08775617675985817
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+NegativityLM <= 0.034628 : -0.3010377344456855
+NegativityLM > 0.034628 : 0.24972520567790096
+NegativityLM is missing : -0.0045698808348947385
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+WordCount <= 20.5 : -0.6656756645036486
+WordCount > 20.5 : 0.1684843129606288
+WordCount is missing : 0.06730088912156497
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+WordCount <= 50.5 : 0.2987895610890672
+WordCount > 50.5 : -0.4501197788541927
+WordCount is missing : -0.004695341445414662
+
+
+Iteration 3
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+NegativityHE <= 0.041886 : -0.09127164754741178
+NegativityHE > 0.041886 : 1.2985415219702736
+NegativityHE is missing : 5.564826594228816E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.168607 : 0.17568921586015993
+PositivityGI > 0.168607 : -0.21906132582919782
+PositivityGI is missing : 0.016418653555558427
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.1884655 : -0.15241950098439608
+PositivityGI > 0.1884655 : 0.41089511133930573
+PositivityGI is missing : 0.013268198247513185
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.0696055 : -0.46180099783503564
+PositivityQDAP > 0.0696055 : 0.12685409102552406
+PositivityQDAP is missing : -0.03495998665964387
+
+
+Iteration 4
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityHE <= 0.059465000000000004 : -0.09696369201195051
+PositivityHE > 0.059465000000000004 : 0.8824040499905205
+PositivityHE is missing : -0.005789656711337312
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+RatioUncertaintyLM <= 0.0135595 : 0.13064291780068502
+RatioUncertaintyLM > 0.0135595 : -0.28214288326259274
+RatioUncertaintyLM is missing : 0.0016800114946966716
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+SentimentHE <= 0.01278 : 0.1276242314656266
+SentimentHE > 0.01278 : -0.25950355175290246
+SentimentHE is missing : -0.0055998393839812
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.180882 : -0.07053656321970866
+PositivityQDAP > 0.180882 : 0.5343437215808645
+PositivityQDAP is missing : 0.010440668977384129
+
+
+Iteration 5
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.0658615 : 0.40250956397883936
+PositivityQDAP > 0.0658615 : -0.16327624960126316
+PositivityQDAP is missing : -0.016659860619427997
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+NegativityLM <= 0.018779999999999998 : -0.2782629842740698
+NegativityLM > 0.018779999999999998 : 0.09553599118061488
+NegativityLM is missing : -0.007790897701119569
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+SentimentQDAP <= 0.028063499999999998 : -0.2905714870714268
+SentimentQDAP > 0.028063499999999998 : 0.12644894732409914
+SentimentQDAP is missing : 0.0019428240650719098
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+NegativityLM <= 0.0292185 : 0.2520024048470856
+NegativityLM > 0.0292185 : -0.1831153146886196
+NegativityLM is missing : 0.019057556440503057
+
+
+Iteration 6
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+WordCount <= 140.5 : 0.0353205725808429
+WordCount > 140.5 : -0.923797271321813
+WordCount is missing : -0.004643030076583585
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.0816615 : 0.15117355056585471
+NegativityGI > 0.0816615 : -0.225183138164392
+NegativityGI is missing : -0.012828981700131312
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.020236 : 0.19551204402063532
+NegativityQDAP > 0.020236 : -0.09400289223284485
+NegativityQDAP is missing : 0.0072411761796327715
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.127297 : -0.08509502446482366
+NegativityGI > 0.127297 : 0.4706405497908359
+NegativityGI is missing : 0.007509902019546056
+
+
+Iteration 7
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityHE <= 0.01039 : -0.22225774300152248
+PositivityHE > 0.01039 : 0.16240193030461586
+PositivityHE is missing : -0.006162076581332354
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+SentimentHE <= -0.0144405 : -0.4907554706921015
+SentimentHE > -0.0144405 : 0.03638301127914678
+SentimentHE is missing : -0.004843878674550602
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+SentimentHE <= -0.004673500000000001 : 0.317065459475583
+SentimentHE > -0.004673500000000001 : -0.041051041190453746
+SentimentHE is missing : -0.0012575332867369175
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+WordCount <= 65.5 : 0.12693828170397764
+WordCount > 65.5 : -0.34963427594462637
+WordCount is missing : 0.011627247657718097
+
+
+Iteration 8
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.155256 : 0.08432627414915404
+PositivityQDAP > 0.155256 : -0.4028216967236711
+PositivityQDAP is missing : 0.0012290581639262741
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+NegativityLM <= 0.11246049999999999 : -0.036469930861738435
+NegativityLM > 0.11246049999999999 : 0.4916969129600647
+NegativityLM is missing : -0.004519320459363723
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.2327175 : -0.03525652840790044
+PositivityGI > 0.2327175 : 0.3243550115675449
+PositivityGI is missing : 0.012613804543038428
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+NegativityLM <= 0.083651 : 0.05190337950834418
+NegativityLM > 0.083651 : -0.3876258035675828
+NegativityLM is missing : -0.0132285452253647
+
+
+Iteration 9
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+NegativityHE <= 0.0091325 : -0.1207076637404859
+NegativityHE > 0.0091325 : 0.21526510924918826
+NegativityHE is missing : -0.005768933587741963
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.045079 : 0.1889862368510136
+NegativityGI > 0.045079 : -0.07629899861865415
+NegativityGI is missing : -0.0018376237945426119
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+RatioUncertaintyLM <= 0.0300375 : -0.03532997645876503
+RatioUncertaintyLM > 0.0300375 : 0.26087513207688956
+RatioUncertaintyLM is missing : 6.989827578706132E-4
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.0343985 : -0.1419381990296353
+NegativityQDAP > 0.0343985 : 0.1403997652459568
+NegativityQDAP is missing : 0.005642244897165325
+
+
+Iteration 10
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+SentimentHE <= 0.09137300000000001 : -0.029352230885462696
+SentimentHE > 0.09137300000000001 : 0.9725573502802569
+SentimentHE is missing : -0.003985923350839452
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+WordCount <= 85.5 : -0.05903468040268615
+WordCount > 85.5 : 0.16801829715872005
+WordCount is missing : 0.005219094962855971
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+WordCount <= 14.5 : -0.3613910653176177
+WordCount > 14.5 : 0.020943395289829136
+WordCount is missing : -0.0033673096734030475
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+WordCount <= 17.5 : 0.3492062954955401
+WordCount > 17.5 : -0.06430827528212181
+WordCount is missing : 0.0021573006254201007
+
+Number of performed iterations: 10
+
+
+Time taken to build model: 1.39 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        4145               54.3393 %
+Incorrectly Classified Instances      3483               45.6607 %
+Kappa statistic                          0.3609
+Mean absolute error                      0.2974
+Root mean squared error                  0.3854
+Relative absolute error                 81.6017 %
+Root relative squared error             90.3005 %
+Total Number of Instances             7628     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.420    0.059    0.582      0.420    0.488      0.414    0.783     0.518     SECTION3
+                 0.393    0.113    0.496      0.393    0.438      0.305    0.741     0.450     SECTION0
+                 0.640    0.331    0.525      0.640    0.577      0.299    0.711     0.564     SECTION1
+                 0.616    0.145    0.589      0.616    0.602      0.464    0.829     0.609     SECTION2
+Weighted Avg.    0.543    0.192    0.544      0.543    0.538      0.361    0.759     0.543     
+
+=== Confusion Matrix ===
+
+    a    b    c    d   <-- classified as
+  523  172  380  171 |    a = SECTION3
+  112  662  700  212 |    b = SECTION0
+  177  376 1775  444 |    c = SECTION1
+   87  124  528 1185 |    d = SECTION2
+
