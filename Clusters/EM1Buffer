@@ -1,0 +1,115 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.EM -I 100 -N -1 -X 10 -max -1 -ll-cv 1.0E-6 -ll-iter 1.0E-6 -M 1.0E-6 -K 10 -num-slots 1 -S 100
+Relation:     train_processed-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0
+Instances:    7628
+Attributes:   15
+              WordCount
+              SentimentGI
+              NegativityGI
+              PositivityGI
+              SentimentHE
+              NegativityHE
+              PositivityHE
+              SentimentLM
+              NegativityLM
+              PositivityLM
+              RatioUncertaintyLM
+              SentimentQDAP
+              NegativityQDAP
+              PositivityQDAP
+              Section
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+EM
+==
+
+Number of clusters selected by cross validation: 3
+Number of iterations performed: 5
+
+
+                       Cluster
+Attribute                    0         1         2
+                        (0.29)    (0.25)    (0.46)
+===================================================
+WordCount
+  mean                   0.1371    0.0441    0.1077
+  std. dev.              0.1189    0.0315    0.0705
+
+SentimentGI
+  mean                   0.4386      0.51    0.5217
+  std. dev.              0.0831    0.1462    0.0733
+
+NegativityGI
+  mean                   0.2222    0.1618    0.1025
+  std. dev.              0.0933    0.1376    0.0685
+
+PositivityGI
+  mean                   0.2292     0.276    0.2443
+  std. dev.               0.091    0.1606    0.0987
+
+SentimentHE
+  mean                    0.438    0.4831    0.4539
+  std. dev.               0.062     0.068    0.0275
+
+NegativityHE
+  mean                   0.0926         0    0.0101
+  std. dev.              0.1035         0    0.0242
+
+PositivityHE
+  mean                   0.0729     0.081    0.0369
+  std. dev.              0.0871    0.1209     0.049
+
+SentimentLM
+  mean                   0.3723    0.4328    0.4455
+  std. dev.              0.0823    0.1234    0.0497
+
+NegativityLM
+  mean                    0.236    0.1644    0.0869
+  std. dev.              0.1315    0.1736    0.0799
+
+PositivityLM
+  mean                   0.0655    0.1077    0.0553
+  std. dev.              0.0738    0.1327    0.0635
+
+RatioUncertaintyLM
+  mean                   0.0604    0.0648    0.0362
+  std. dev.              0.0806    0.1275    0.0575
+
+SentimentQDAP
+  mean                   0.4207    0.4957    0.4936
+  std. dev.              0.0773    0.1315    0.0595
+
+NegativityQDAP
+  mean                   0.2438    0.1535    0.0758
+  std. dev.              0.1258     0.172    0.0692
+
+PositivityQDAP
+  mean                   0.1971    0.2619    0.2065
+  std. dev.              0.0988    0.1759    0.0992
+
+Section
+  SECTION3             707.6373  222.4403  318.9224
+  SECTION0             657.0566  201.2337  830.7098
+  SECTION1             559.9545  493.3199 1721.7257
+  SECTION2             261.6041  1000.447  664.9488
+  [total]             2186.2525 1917.4408 3536.3067
+
+
+Time taken to build model (full training data) : 152.74 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      1684 ( 22%)
+1      4297 ( 56%)
+2      1647 ( 22%)
+
+
+Log likelihood: 17.01619
+
