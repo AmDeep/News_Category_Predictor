@@ -1,0 +1,187 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.5 -M 0.5 -N 5000 -V 0 -S 0 -E 20 -H 5 -batch-size 1000
+Relation:     train_processed
+Instances:    7628
+Attributes:   15
+              WordCount
+              SentimentGI
+              NegativityGI
+              PositivityGI
+              SentimentHE
+              NegativityHE
+              PositivityHE
+              SentimentLM
+              NegativityLM
+              PositivityLM
+              RatioUncertaintyLM
+              SentimentQDAP
+              NegativityQDAP
+              PositivityQDAP
+              Section
+Test mode:    15-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -4.234395041231312
+    Node 4    -1.7842613321173615
+    Node 5    1.9960442491225079
+    Node 6    0.6120122102920014
+    Node 7    1.5009512973547683
+    Node 8    1.8407116757547293
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -3.684005931662689
+    Node 4    0.5747355588875556
+    Node 5    -1.7952769231452739
+    Node 6    1.920101103855215
+    Node 7    -1.1513587970539496
+    Node 8    2.4580049433588633
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -0.8971979200229708
+    Node 4    -1.4124119602281144
+    Node 5    -1.8370830615965872
+    Node 6    -1.910787240190012
+    Node 7    -0.3980370406204254
+    Node 8    1.4459539348919135
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    0.7132167886065847
+    Node 4    1.1860758662781223
+    Node 5    -0.7190184798777964
+    Node 6    -0.41377399357097283
+    Node 7    -0.3795619692655201
+    Node 8    -2.7433205366568156
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -70.31394959876262
+    Attrib WordCount    12.258003441905093
+    Attrib SentimentGI    -18.047350078739594
+    Attrib NegativityGI    -6.520475114236827
+    Attrib PositivityGI    -33.95735385791669
+    Attrib SentimentHE    19.419466222519038
+    Attrib NegativityHE    -63.245479293136775
+    Attrib PositivityHE    -14.733171841038176
+    Attrib SentimentLM    14.66551434454334
+    Attrib NegativityLM    -34.19231537183178
+    Attrib PositivityLM    -14.78966890133659
+    Attrib RatioUncertaintyLM    -18.477524828726654
+    Attrib SentimentQDAP    1.456339386446586
+    Attrib NegativityQDAP    70.64638592341241
+    Attrib PositivityQDAP    49.532008986641166
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    64.50252036978833
+    Attrib WordCount    6.975347679454274
+    Attrib SentimentGI    -9.21523537263578
+    Attrib NegativityGI    13.681340500446812
+    Attrib PositivityGI    2.912690861362762
+    Attrib SentimentHE    6.852913628135364
+    Attrib NegativityHE    47.923904324148985
+    Attrib PositivityHE    49.46042037115976
+    Attrib SentimentLM    -3.8850128589742123
+    Attrib NegativityLM    -8.729348583166193
+    Attrib PositivityLM    -7.867117658054149
+    Attrib RatioUncertaintyLM    6.019411157652203
+    Attrib SentimentQDAP    -12.46763832686713
+    Attrib NegativityQDAP    2.794849560700362
+    Attrib PositivityQDAP    -18.8740409616354
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    36.97083138464604
+    Attrib WordCount    26.299739132773688
+    Attrib SentimentGI    -4.27821626734617
+    Attrib NegativityGI    -40.969181492998786
+    Attrib PositivityGI    -36.038063868293385
+    Attrib SentimentHE    34.249740276687845
+    Attrib NegativityHE    8.861599368199869
+    Attrib PositivityHE    67.79760837297417
+    Attrib SentimentLM    -31.18054716857631
+    Attrib NegativityLM    61.27096372031177
+    Attrib PositivityLM    6.625640108580117
+    Attrib RatioUncertaintyLM    -29.139218545697645
+    Attrib SentimentQDAP    -30.71421743457601
+    Attrib NegativityQDAP    13.472753450677258
+    Attrib PositivityQDAP    -42.257821821967596
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    106.23890302609027
+    Attrib WordCount    -21.843966336465122
+    Attrib SentimentGI    -3.0793759993985357
+    Attrib NegativityGI    11.068789362838196
+    Attrib PositivityGI    11.929556830278923
+    Attrib SentimentHE    -5.715395851722069
+    Attrib NegativityHE    73.23830598954261
+    Attrib PositivityHE    46.79890511659551
+    Attrib SentimentLM    -3.4185062718275554
+    Attrib NegativityLM    0.6453368621627702
+    Attrib PositivityLM    7.2814362954424015
+    Attrib RatioUncertaintyLM    20.274874065501795
+    Attrib SentimentQDAP    -9.088042415325454
+    Attrib NegativityQDAP    -6.711495897715001
+    Attrib PositivityQDAP    -19.724588149037146
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    99.19147009967503
+    Attrib WordCount    106.60455809126357
+    Attrib SentimentGI    2.5257403898272255
+    Attrib NegativityGI    -3.9645255033369406
+    Attrib PositivityGI    6.887733872941188
+    Attrib SentimentHE    -4.477295571614725
+    Attrib NegativityHE    10.025861955614676
+    Attrib PositivityHE    -0.15030606745897562
+    Attrib SentimentLM    -6.139407789980913
+    Attrib NegativityLM    3.0375940131121477
+    Attrib PositivityLM    3.7566211051717984
+    Attrib RatioUncertaintyLM    3.092165030169414
+    Attrib SentimentQDAP    -2.525954907249947
+    Attrib NegativityQDAP    -10.627264247610906
+    Attrib PositivityQDAP    -11.318327498878055
+Class SECTION3
+    Input
+    Node 0
+Class SECTION0
+    Input
+    Node 1
+Class SECTION1
+    Input
+    Node 2
+Class SECTION2
+    Input
+    Node 3
+
+
+Time taken to build model: 244.64 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        4098               53.7231 %
+Incorrectly Classified Instances      3530               46.2769 %
+Kappa statistic                          0.3523
+Mean absolute error                      0.2869
+Root mean squared error                  0.3952
+Relative absolute error                 78.7386 %
+Root relative squared error             92.5871 %
+Total Number of Instances             7628     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.450    0.058    0.603      0.450    0.516      0.443    0.759     0.498     SECTION3
+                 0.318    0.100    0.475      0.318    0.381      0.255    0.711     0.412     SECTION0
+                 0.622    0.333    0.516      0.622    0.564      0.280    0.686     0.530     SECTION1
+                 0.664    0.167    0.573      0.664    0.615      0.475    0.805     0.569     SECTION2
+Weighted Avg.    0.537    0.195    0.536      0.537    0.529      0.350    0.734     0.509     
+
+=== Confusion Matrix ===
+
+    a    b    c    d   <-- classified as
+  561  125  380  180 |    a = SECTION3
+  114  536  798  238 |    b = SECTION0
+  173  343 1723  533 |    c = SECTION1
+   82  124  440 1278 |    d = SECTION2
+
