@@ -1,0 +1,121 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 1.0 -M 0.6 -N 1000 -V 0 -S 0 -E 20 -H a -D -output-debug-info -batch-size 1000
+Relation:     train_processed-weka.filters.unsupervised.attribute.Remove-R5-10,12-14
+Instances:    7628
+Attributes:   6
+              WordCount
+              SentimentGI
+              NegativityGI
+              PositivityGI
+              RatioUncertaintyLM
+              Section
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -2.8982220729357198
+    Node 4    2.1725495126828855
+    Node 5    1.8062962567824847
+    Node 6    -4.470226746693754
+    Node 7    -0.5819547348030132
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -3.3541177215441365
+    Node 4    0.39583359208552715
+    Node 5    2.337075316141153
+    Node 6    1.807519819300761
+    Node 7    -1.8581261465805576
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -1.6540011744733483
+    Node 4    -3.1258654555918945
+    Node 5    2.601775956671904
+    Node 6    0.9419868709038797
+    Node 7    1.3554645951944726
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    1.8652755936208973
+    Node 4    0.40858241254568467
+    Node 5    -4.3909457860888494
+    Node 6    0.081149741112662
+    Node 7    -1.03312933097605
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    5.363673998710952
+    Attrib WordCount    6.644761875021703
+    Attrib SentimentGI    -1.285884883792104
+    Attrib NegativityGI    1.6873667578627125
+    Attrib PositivityGI    0.029301391196264116
+    Attrib RatioUncertaintyLM    -1.0085876197048627
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    15.712509909911324
+    Attrib WordCount    18.03949758073482
+    Attrib SentimentGI    -0.4343389513943141
+    Attrib NegativityGI    -0.9919558000909282
+    Attrib PositivityGI    -0.26765212526164484
+    Attrib RatioUncertaintyLM    0.0452004332616825
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -0.5763553136827173
+    Attrib WordCount    8.115718983535862
+    Attrib SentimentGI    0.39030121891714903
+    Attrib NegativityGI    -0.5154359256035318
+    Attrib PositivityGI    0.029475591037486558
+    Attrib RatioUncertaintyLM    -5.722915285450388
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    6.433060965672227
+    Attrib WordCount    4.827594112713649
+    Attrib SentimentGI    2.0532728412901435
+    Attrib NegativityGI    0.5767359428047256
+    Attrib PositivityGI    3.566776848664274
+    Attrib RatioUncertaintyLM    2.3546340746278354
+Class SECTION3
+    Input
+    Node 0
+Class SECTION0
+    Input
+    Node 1
+Class SECTION1
+    Input
+    Node 2
+Class SECTION2
+    Input
+    Node 3
+
+
+Time taken to build model: 28.22 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3688               48.3482 %
+Incorrectly Classified Instances      3940               51.6518 %
+Kappa statistic                          0.2606
+Mean absolute error                      0.3227
+Root mean squared error                  0.402 
+Relative absolute error                 88.569  %
+Root relative squared error             94.1881 %
+Total Number of Instances             7628     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.120    0.036    0.392      0.120    0.183      0.142    0.662     0.290     SECTION3
+                 0.257    0.093    0.440      0.257    0.324      0.203    0.698     0.388     SECTION0
+                 0.670    0.432    0.469      0.670    0.552      0.229    0.668     0.518     SECTION1
+                 0.650    0.186    0.541      0.650    0.590      0.438    0.792     0.541     SECTION2
+Weighted Avg.    0.483    0.230    0.468      0.483    0.451      0.262    0.705     0.458     
+
+=== Confusion Matrix ===
+
+    a    b    c    d   <-- classified as
+  149  156  628  313 |    a = SECTION3
+   88  433  938  227 |    b = SECTION0
+   88  307 1856  521 |    c = SECTION1
+   55   87  532 1250 |    d = SECTION2
+
