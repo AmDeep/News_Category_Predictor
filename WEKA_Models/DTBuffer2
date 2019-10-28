@@ -1,0 +1,61 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.DecisionTable -X 1 -S "weka.attributeSelection.BestFirst -D 1 -N 5"
+Relation:     train_processed-weka.filters.unsupervised.attribute.Remove-R5-10,12-14
+Instances:    7628
+Attributes:   6
+              WordCount
+              SentimentGI
+              NegativityGI
+              PositivityGI
+              RatioUncertaintyLM
+              Section
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Decision Table:
+
+Number of training instances: 7628
+Number of Rules : 89
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 20
+	Merit of best subset found:   47.378
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 1,4,5,6
+
+Time taken to build model: 0.35 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3549               46.526  %
+Incorrectly Classified Instances      4079               53.474  %
+Kappa statistic                          0.2463
+Mean absolute error                      0.3272
+Root mean squared error                  0.4053
+Relative absolute error                 89.8033 %
+Root relative squared error             94.9593 %
+Total Number of Instances             7628     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.101    0.038    0.341      0.101    0.156      0.108    0.648     0.270     SECTION3
+                 0.391    0.176    0.387      0.391    0.389      0.215    0.672     0.352     SECTION0
+                 0.579    0.370    0.472      0.579    0.520      0.202    0.650     0.495     SECTION1
+                 0.602    0.174    0.539      0.602    0.569      0.413    0.782     0.544     SECTION2
+Weighted Avg.    0.465    0.223    0.448      0.465    0.444      0.243    0.688     0.439     
+
+=== Confusion Matrix ===
+
+    a    b    c    d   <-- classified as
+  126  327  527  266 |    a = SECTION3
+   78  660  722  226 |    b = SECTION0
+   83  584 1604  501 |    c = SECTION1
+   83  135  547 1159 |    d = SECTION2
+
