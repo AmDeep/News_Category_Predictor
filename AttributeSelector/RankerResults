@@ -1,0 +1,55 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.OneRAttributeEval -S 1 -F 10 -B 6
+Search:       weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1
+Relation:     train_processed
+Instances:    7628
+Attributes:   15
+              WordCount
+              SentimentGI
+              NegativityGI
+              PositivityGI
+              SentimentHE
+              NegativityHE
+              PositivityHE
+              SentimentLM
+              NegativityLM
+              PositivityLM
+              RatioUncertaintyLM
+              SentimentQDAP
+              NegativityQDAP
+              PositivityQDAP
+              Section
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 15 Section):
+	OneR feature evaluator.
+
+	Using 10 fold cross validation for evaluating attributes.
+	Minimum bucket size for OneR: 6
+
+Ranked attributes:
+44.1662   1 WordCount
+38.3325   6 NegativityHE
+38.1358  13 NegativityQDAP
+37.9392   3 NegativityGI
+37.7294   2 SentimentGI
+37.6901  14 PositivityQDAP
+37.6245   5 SentimentHE
+37.5459  12 SentimentQDAP
+37.4017   4 PositivityGI
+37.1133   7 PositivityHE
+36.5889   9 NegativityLM
+36.0121   8 SentimentLM
+35.1862  10 PositivityLM
+35.1206  11 RatioUncertaintyLM
+
+Selected attributes: 1,6,13,3,2,14,5,12,4,7,9,8,10,11 : 14
+

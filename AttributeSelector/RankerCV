@@ -1,0 +1,44 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.ClassifierAttributeEval -execution-slots 1 -B weka.classifiers.rules.ZeroR -F 5 -T 0.01 -R 1 -E DEFAULT --
+Search:       weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1
+Relation:     train_processed
+Instances:    7628
+Attributes:   15
+              WordCount
+              SentimentGI
+              NegativityGI
+              PositivityGI
+              SentimentHE
+              NegativityHE
+              PositivityHE
+              SentimentLM
+              NegativityLM
+              PositivityLM
+              RatioUncertaintyLM
+              SentimentQDAP
+              NegativityQDAP
+              PositivityQDAP
+              Section
+Evaluation mode:    10-fold cross-validation
+
+
+
+=== Attribute selection 10 fold cross-validation (stratified), seed: 1 ===
+
+average merit      average rank  attribute
+ 0     +- 0         1   +- 0      14 PositivityQDAP
+ 0     +- 0         2   +- 0       4 PositivityGI
+ 0     +- 0         3   +- 0       5 SentimentHE
+ 0     +- 0         4   +- 0       3 NegativityGI
+ 0     +- 0         5   +- 0      13 NegativityQDAP
+ 0     +- 0         6   +- 0       2 SentimentGI
+ 0     +- 0         7   +- 0       6 NegativityHE
+ 0     +- 0         8   +- 0       7 PositivityHE
+ 0     +- 0         9   +- 0       8 SentimentLM
+ 0     +- 0        10   +- 0       9 NegativityLM
+ 0     +- 0        11   +- 0      12 SentimentQDAP
+ 0     +- 0        12   +- 0      11 RatioUncertaintyLM
+ 0     +- 0        13   +- 0      10 PositivityLM
+ 0     +- 0        14   +- 0       1 WordCount
+
