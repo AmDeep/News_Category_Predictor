@@ -1,0 +1,4562 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.LogitBoost -P 100 -use-estimated-priors -L -1.7976931348623157E308 -H 1.0 -Z 3.0 -O 1 -E 1 -S 5 -I 100 -W weka.classifiers.trees.DecisionStump -output-debug-info
+Relation:     train_processed-weka.filters.unsupervised.attribute.Remove-R1-2,5-7,9,11-12
+Instances:    7628
+Attributes:   7
+              NegativityGI
+              PositivityGI
+              SentimentLM
+              PositivityLM
+              NegativityQDAP
+              PositivityQDAP
+              Section
+Test mode:    15-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Initial Fs: 
+
+	Class 1 (Section=SECTION3): -0.38
+
+	Class 2 (Section=SECTION0): -0.08
+
+	Class 3 (Section=SECTION1): 0.42
+
+	Class 4 (Section=SECTION2): 0.05
+
+LogitBoost: Base classifiers and their weights: 
+
+Iteration 1
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.089944 : -0.2179908875821538
+NegativityGI > 0.089944 : 0.36274587081330617
+NegativityGI is missing : -2.839977158824681E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.0012165 : 0.3227915292603219
+SentimentLM > -0.0012165 : -0.4217247334970526
+SentimentLM is missing : -7.928624329299629E-5
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.0395785 : 0.41084247044800526
+NegativityQDAP > 0.0395785 : -0.4274729839896361
+NegativityQDAP is missing : 2.5692537996249313E-4
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.0035715 : 0.9238259152835907
+NegativityGI > 0.0035715 : -0.14108261633263608
+NegativityGI is missing : 5.7283508197202995E-6
+
+
+Iteration 2
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.0682525 : 0.4858016814266675
+PositivityQDAP > 0.0682525 : -0.17679173454080233
+PositivityQDAP is missing : -0.0019192781071755264
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.23390450000000002 : 0.05818050437765164
+PositivityGI > 0.23390450000000002 : -0.5253898087501975
+PositivityGI is missing : -0.009978674654892453
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.168607 : -0.2036692002225284
+PositivityGI > 0.168607 : 0.30025623651436895
+PositivityGI is missing : -0.00135965616599165
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.1995575 : -0.07961716801332033
+PositivityQDAP > 0.1995575 : 1.0065559538278053
+PositivityQDAP is missing : 0.012361207872557886
+
+
+Iteration 3
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.013987 : -0.16597981064301998
+PositivityLM > 0.013987 : 0.15851367003582784
+PositivityLM is missing : -0.004956476215789611
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.0048115 : -0.23645103393861847
+PositivityLM > 0.0048115 : 0.16968506176757459
+PositivityLM is missing : -0.006452553714498548
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.131446 : 0.08026059479040419
+NegativityGI > 0.131446 : -0.4882407458335105
+NegativityGI is missing : 0.005740487887761475
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.002304 : 0.3451987328848494
+PositivityLM > 0.002304 : -0.2680797249736963
+PositivityLM is missing : 0.003269223725274103
+
+
+Iteration 4
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.155256 : 0.07757362705219777
+PositivityQDAP > 0.155256 : -0.37443808674457546
+PositivityQDAP is missing : 0.0012613218446623326
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.0816615 : 0.1403636704265562
+NegativityGI > 0.0816615 : -0.18158142599404806
+NegativityGI is missing : -5.705174608294696E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.0292185 : 0.1031361848412573
+PositivityLM > 0.0292185 : -0.21977318038186236
+PositivityLM is missing : 0.006457295854245757
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.0035525 : -0.28553828626890354
+SentimentLM > -0.0035525 : 0.30957856116416094
+SentimentLM is missing : -0.00796319587260686
+
+
+Iteration 5
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.133677 : 0.027044079585417626
+NegativityQDAP > 0.133677 : -0.5594386626788764
+NegativityQDAP is missing : -0.011201436469492536
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= 0.020726 : 0.04756342059836119
+SentimentLM > 0.020726 : -0.39592234653879793
+SentimentLM is missing : -0.006142121573321818
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.022814 : 0.23297887776367265
+NegativityQDAP > 0.022814 : -0.11214287083845326
+NegativityQDAP is missing : 0.01791643167901393
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.1245155 : -0.12063421401039494
+NegativityGI > 0.1245155 : 0.5145611585938304
+NegativityGI is missing : -0.006416624113661193
+
+
+Iteration 6
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.051414 : 0.23774296864765898
+PositivityQDAP > 0.051414 : -0.04718461530055657
+PositivityQDAP is missing : 0.008951407904191442
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.07947850000000001 : 0.15624509172873244
+PositivityQDAP > 0.07947850000000001 : -0.07819746437674756
+PositivityQDAP is missing : -0.001858528570141607
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.0241 : -0.43208545985619046
+PositivityQDAP > 0.0241 : 0.024073267461943812
+PositivityQDAP is missing : -0.009238771583321457
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= 0.024292 : -0.05970540435668999
+SentimentLM > 0.024292 : 0.4108522258301128
+SentimentLM is missing : 0.005565913353739889
+
+
+Iteration 7
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.0480385 : -0.047642157099161524
+PositivityLM > 0.0480385 : 0.33370903298837684
+PositivityLM is missing : 0.0013252117418544854
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.0466935 : -0.43246534626487787
+PositivityGI > 0.0466935 : 0.023382841877439782
+PositivityGI is missing : -0.0011816515850175213
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.0582265 : -0.22865821364321687
+SentimentLM > -0.0582265 : 0.05476982350473434
+SentimentLM is missing : 0.0016030227954389633
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.006269500000000001 : 0.1788451068081236
+PositivityLM > 0.006269500000000001 : -0.1646575206672537
+PositivityLM is missing : -0.0018373583145203745
+
+
+Iteration 8
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.1345345 : 0.0573479328470457
+PositivityQDAP > 0.1345345 : -0.17293184905632425
+PositivityQDAP is missing : 1.5510497500429742E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.056711 : 0.1532072088657754
+NegativityGI > 0.056711 : -0.09109802795772214
+NegativityGI is missing : -0.0034988782218073763
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.2154275 : -0.0400045026759083
+PositivityGI > 0.2154275 : 0.18675365212135822
+PositivityGI is missing : 0.0034357011168835183
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.0035525 : -0.13718338916308045
+SentimentLM > -0.0035525 : 0.13750780551962324
+SentimentLM is missing : -8.651250688535985E-4
+
+
+Iteration 9
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= 0.06584499999999999 : 0.005122877631420615
+SentimentLM > 0.06584499999999999 : -0.5074563886860576
+SentimentLM is missing : -0.007051587691075101
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.026145 : 0.16150586165549122
+NegativityGI > 0.026145 : -0.03687649032391666
+NegativityGI is missing : -0.006356184176385132
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.15266000000000002 : 0.06421555607788232
+PositivityQDAP > 0.15266000000000002 : -0.18738474103312988
+PositivityQDAP is missing : 0.009362603212964862
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.2572175 : -0.0102467356809881
+NegativityGI > 0.2572175 : 1.7994863780975674
+NegativityGI is missing : 6.404200298201888E-4
+
+
+Iteration 10
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.056037500000000004 : -0.026952822644206988
+PositivityLM > 0.056037500000000004 : 0.2665252247273975
+PositivityLM is missing : 9.70757449408109E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.007663 : -0.16523529930312567
+NegativityQDAP > 0.007663 : 0.0446567340900072
+NegativityQDAP is missing : 0.00395602129946288
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.058610999999999996 : 0.10763813555437345
+NegativityGI > 0.058610999999999996 : -0.08029888659965444
+NegativityGI is missing : -9.360247891587193E-4
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.0949875 : -0.050541511568037045
+NegativityQDAP > 0.0949875 : 0.25547223062668845
+NegativityQDAP is missing : -0.003483718570528029
+
+
+Iteration 11
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.03721 : 0.10947793015077271
+SentimentLM > -0.03721 : -0.05323236511957657
+SentimentLM is missing : 0.0028840220633793044
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.104413 : 0.08325973611290871
+PositivityQDAP > 0.104413 : -0.08626140006637827
+PositivityQDAP is missing : 0.0012387469629471916
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= 0.0367005 : 0.018044984270146117
+SentimentLM > 0.0367005 : -0.2677986389690451
+SentimentLM is missing : -0.006057272544246696
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.0062965 : 0.18827973033237158
+NegativityQDAP > 0.0062965 : -0.06707104168948023
+NegativityQDAP is missing : 0.0037490605127347256
+
+
+Iteration 12
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.16096850000000001 : 0.024785270363688904
+PositivityQDAP > 0.16096850000000001 : -0.18164437916654108
+PositivityQDAP is missing : -0.0015310740581810848
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.0840405 : 0.19601826848516007
+SentimentLM > -0.0840405 : -0.022961519117645247
+SentimentLM is missing : 6.73950354192158E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.1884655 : -0.040690733251767586
+PositivityGI > 0.1884655 : 0.10959312763310926
+PositivityGI is missing : 0.0049200216051602606
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.032184000000000004 : -0.13298350114569252
+NegativityQDAP > 0.032184000000000004 : 0.09538288518214925
+NegativityQDAP is missing : -0.005347986465676128
+
+
+Iteration 13
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.288375 : -0.007054948510425564
+PositivityGI > 0.288375 : 0.3403192378829635
+PositivityGI is missing : 0.004397940021589683
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.3827835 : 0.009703695055747485
+PositivityGI > 0.3827835 : -1.1732638821780765
+PositivityGI is missing : 0.006104195605202682
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.130577 : 0.034021795429531904
+PositivityQDAP > 0.130577 : -0.10103217676090118
+PositivityQDAP is missing : -0.010269721861557933
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.006757 : 0.5155773443985369
+PositivityGI > 0.006757 : -0.019368400001353786
+PositivityGI is missing : 0.0028489340457450944
+
+
+Iteration 14
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.3565375 : 0.010769446485198972
+PositivityGI > 0.3565375 : -0.9234604451231313
+PositivityGI is missing : 0.004637337476786938
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.032877 : 0.12818821094703226
+NegativityGI > 0.032877 : -0.033612744350257316
+NegativityGI is missing : -0.0020477270518222267
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.2158385 : 1.8599561363269268
+SentimentLM > -0.2158385 : -2.7778656562270343E-4
+SentimentLM is missing : 0.0017519843049147448
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.058538 : -0.2470907992937553
+PositivityQDAP > 0.058538 : 0.058029231745911805
+PositivityQDAP is missing : -0.003917180061058477
+
+
+Iteration 15
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= 0.06584499999999999 : 0.001962996733983101
+SentimentLM > 0.06584499999999999 : -0.40347175402020136
+SentimentLM is missing : -0.006817495835097123
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.14039400000000002 : -0.0015910694830825604
+PositivityLM > 0.14039400000000002 : 1.3324846749590922
+PositivityLM is missing : 0.0014974771811399395
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.32971 : 0.007823853754479358
+PositivityQDAP > 0.32971 : -0.7887096061941162
+PositivityQDAP is missing : 0.003607195406235314
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.091256 : 0.20168050029033513
+PositivityGI > 0.091256 : -0.05214033481100069
+PositivityGI is missing : -2.2575215643194716E-4
+
+
+Iteration 16
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.09954950000000001 : -0.006777544297114458
+PositivityLM > 0.09954950000000001 : 0.5270962075186931
+PositivityLM is missing : 0.0013903374683831523
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.295207 : 0.007099792709514282
+PositivityQDAP > 0.295207 : -0.8254451048506842
+PositivityQDAP is missing : 0.0025998612165614708
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.41886 : -0.0036804108176396906
+PositivityGI > 0.41886 : 1.2865434432456264
+PositivityGI is missing : -0.0013351860121132973
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.2207 : -0.008578676927970442
+NegativityQDAP > 0.2207 : 1.082739186416498
+NegativityQDAP is missing : -0.0020766790746950055
+
+
+Iteration 17
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.13245600000000002 : 0.0032688184850377263
+PositivityLM > 0.13245600000000002 : -1.1706163278432449
+PositivityLM is missing : 3.7272357151331333E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.0048115 : -0.06373075843736861
+PositivityLM > 0.0048115 : 0.04169434638722486
+PositivityLM is missing : -0.0011344468550193037
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.2327175 : -0.01834781598421588
+PositivityGI > 0.2327175 : 0.1178354027913943
+PositivityGI is missing : -8.117609112342666E-5
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.09958700000000001 : -0.08993290729939292
+PositivityQDAP > 0.09958700000000001 : 0.07716019304097217
+PositivityQDAP is missing : 9.094643484765466E-4
+
+
+Iteration 18
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.0992055 : 0.020341054053248334
+NegativityQDAP > 0.0992055 : -0.13066276494489776
+NegativityQDAP is missing : -0.00152871786495163
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.046801999999999996 : 0.0858060002863849
+SentimentLM > -0.046801999999999996 : -0.04124321289420663
+SentimentLM is missing : -0.0029769050160698076
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= 0.1213205 : 0.006308256029971426
+SentimentLM > 0.1213205 : -0.8332080777695131
+SentimentLM is missing : 0.0033845486449621018
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.0062965 : 0.1270703044793826
+NegativityQDAP > 0.0062965 : -0.04957767272455207
+NegativityQDAP is missing : 7.560654480103467E-5
+
+
+Iteration 19
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.0884215 : 0.20797827288341025
+SentimentLM > -0.0884215 : -0.020551390474245097
+SentimentLM is missing : -5.418846707456885E-5
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.035122 : 0.07211978220238525
+NegativityQDAP > 0.035122 : -0.056970488671620384
+NegativityQDAP is missing : -0.004328835341888931
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.020236 : 0.07676107592424733
+NegativityQDAP > 0.020236 : -0.035413182195627495
+NegativityQDAP is missing : 0.004680306347715452
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.025263 : -0.10982033744983431
+NegativityQDAP > 0.025263 : 0.06541743260489319
+NegativityQDAP is missing : -0.0014064471198303164
+
+
+Iteration 20
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.0415435 : -0.026968593959023224
+PositivityLM > 0.0415435 : 0.11139622914120828
+PositivityLM is missing : -0.0017185042066439676
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.13069350000000002 : 0.3383262506390128
+SentimentLM > -0.13069350000000002 : -0.004284874426633234
+SentimentLM is missing : 0.004446400804211828
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.0141855 : -0.15064732928481178
+NegativityGI > 0.0141855 : 0.01821190229619943
+NegativityGI is missing : -0.004649724070439719
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.0062965 : 0.15731363561552333
+NegativityQDAP > 0.0062965 : -0.057522854340077034
+NegativityQDAP is missing : 0.0027062967934921947
+
+
+Iteration 21
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.2710045 : 0.0037741613057792433
+PositivityQDAP > 0.2710045 : -0.5656740589926829
+PositivityQDAP is missing : -0.0013444328128720184
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.106289 : 0.02757966497957462
+NegativityGI > 0.106289 : -0.08710004981456516
+NegativityGI is missing : -0.001889331237961286
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.0371355 : 0.08301733389825716
+NegativityGI > 0.0371355 : -0.021822412504874884
+NegativityGI is missing : 0.00569214053984452
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.0587225 : -0.10718852551361115
+NegativityGI > 0.0587225 : 0.06443365402514227
+NegativityGI is missing : -0.003976136501871281
+
+
+Iteration 22
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.036540500000000004 : 0.06586733154666732
+NegativityQDAP > 0.036540500000000004 : -0.043818974541374955
+NegativityQDAP is missing : -2.629319388269681E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= 0.04959 : 0.011467081001403324
+SentimentLM > 0.04959 : -0.26002837092169306
+SentimentLM is missing : 0.002067106858495625
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.005038 : 0.03972189185978856
+SentimentLM > -0.005038 : -0.04935010104363896
+SentimentLM is missing : -0.0014907777029728021
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.1544875 : 0.0697253798615427
+PositivityGI > 0.1544875 : -0.07833724132572457
+PositivityGI is missing : -6.7730013578667095E-6
+
+
+Iteration 23
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.0151375 : 0.06775003494837173
+SentimentLM > -0.0151375 : -0.0676683341620485
+SentimentLM is missing : 0.0037070607494240895
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.21240599999999998 : -1.3426010578040872
+SentimentLM > -0.21240599999999998 : 0.004201924006802783
+SentimentLM is missing : 0.0027029730389705724
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.042934 : 0.11960774985634469
+PositivityQDAP > 0.042934 : -0.015550702965079734
+PositivityQDAP is missing : 8.387950153208265E-4
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.219756 : -0.024447307344640463
+PositivityQDAP > 0.219756 : 0.2646479844362647
+PositivityQDAP is missing : -0.00679598920731674
+
+
+Iteration 24
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.115098 : 0.03427390867480648
+PositivityQDAP > 0.115098 : -0.06020920563550245
+PositivityQDAP is missing : -6.022542699361053E-5
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.1116305 : -0.0028386677426788256
+PositivityLM > 0.1116305 : 0.5443849454513425
+PositivityLM is missing : 0.001173564557472305
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.196575 : 0.00677180418542033
+NegativityGI > 0.196575 : -0.31074317522774525
+NegativityGI is missing : 0.0011423203538142581
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.006269500000000001 : 0.07140513604904086
+PositivityLM > 0.006269500000000001 : -0.07372213388457859
+PositivityLM is missing : -0.002531016539539599
+
+
+Iteration 25
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.151229 : 0.007384546269480203
+NegativityQDAP > 0.151229 : -0.25426406114719347
+NegativityQDAP is missing : -9.311269903380302E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= 0.0154445 : 0.020834118296476016
+SentimentLM > 0.0154445 : -0.13106712944552099
+SentimentLM is missing : 0.001913245424181817
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.1301525 : -0.0026209985301952387
+PositivityLM > 0.1301525 : 0.7188321692271513
+PositivityLM is missing : 4.610156695176615E-6
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.083651 : -0.21157707761760056
+SentimentLM > -0.083651 : 0.023984380744732255
+SentimentLM is missing : -0.0011441004403674418
+
+
+Iteration 26
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.288375 : -0.00868358967556225
+PositivityGI > 0.288375 : 0.22921023357610007
+PositivityGI is missing : -8.541060641152008E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.073044 : 0.07006179153016139
+PositivityQDAP > 0.073044 : -0.03269335654578134
+PositivityQDAP is missing : -0.003052975812305438
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= 0.023857000000000003 : 0.018819353286029024
+SentimentLM > 0.023857000000000003 : -0.1011741306280439
+SentimentLM is missing : 0.0035452199748799706
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.0604755 : -0.1227669806136795
+PositivityQDAP > 0.0604755 : 0.03106172454601602
+PositivityQDAP is missing : -6.127307255225165E-4
+
+
+Iteration 27
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= 0.00137 : 0.022939108473914158
+SentimentLM > 0.00137 : -0.10056800397688563
+SentimentLM is missing : -3.485214306743269E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.19570949999999998 : -0.024191399475670616
+PositivityGI > 0.19570949999999998 : 0.09574251286410264
+PositivityGI is missing : 0.0015139667578948155
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.31530199999999997 : -0.006079871019733277
+PositivityGI > 0.31530199999999997 : 0.2690555420155471
+PositivityGI is missing : 6.862932878869461E-4
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.0051545 : 0.25016396823960146
+PositivityQDAP > 0.0051545 : -0.02186842884436979
+PositivityQDAP is missing : -0.0020739783524915414
+
+
+Iteration 28
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.1688105 : -0.03172971137508155
+PositivityGI > 0.1688105 : 0.05862327950082802
+PositivityGI is missing : -3.9334770043448786E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= 0.09404499999999999 : 0.0038096437900360463
+SentimentLM > 0.09404499999999999 : -0.5104577238647439
+SentimentLM is missing : 7.53129319312107E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.386752 : 0.0012435224621313245
+PositivityQDAP > 0.386752 : -1.3170572287324456
+PositivityQDAP is missing : -5.70732404466386E-5
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.043244500000000005 : -0.1328326562696184
+PositivityQDAP > 0.043244500000000005 : 0.02079855498061068
+PositivityQDAP is missing : -3.5567129915150424E-4
+
+
+Iteration 29
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.2440475 : 2.4241060910369248
+SentimentLM > -0.2440475 : -0.001240082754775151
+SentimentLM is missing : -5.011092826818054E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.09049950000000001 : -0.006791321540866913
+PositivityLM > 0.09049950000000001 : 0.39228685928175966
+PositivityLM is missing : -5.121609023588102E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.1073915 : -0.017873400799844015
+NegativityGI > 0.1073915 : 0.07782949001773155
+NegativityGI is missing : 0.0017462062905389626
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.08392 : 0.01049883083247448
+PositivityLM > 0.08392 : -0.31066869523024904
+PositivityLM is missing : -0.0012335995183401789
+
+
+Iteration 30
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.1127895 : -0.024199753243480653
+NegativityGI > 0.1127895 : 0.07012724074266888
+NegativityGI is missing : 3.0922488066274285E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.0562065 : -0.16764062408251193
+PositivityGI > 0.0562065 : 0.010076541860100824
+PositivityGI is missing : -5.864557253995412E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= 0.13100699999999998 : 0.0013987154405735878
+SentimentLM > 0.13100699999999998 : -0.8740494308685465
+SentimentLM is missing : -3.8949246354900654E-4
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= 0.1234755 : -0.0033861905495644034
+SentimentLM > 0.1234755 : 0.8526318673663414
+SentimentLM is missing : 8.139198649371889E-4
+
+
+Iteration 31
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.083566 : 0.022080753414035755
+NegativityQDAP > 0.083566 : -0.08258855600454995
+NegativityQDAP is missing : -8.57778779019039E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.2648315 : 0.008326305195433443
+PositivityGI > 0.2648315 : -0.17872748282281636
+PositivityGI is missing : 4.744243727298949E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= 0.28219700000000003 : -9.536861727623218E-4
+SentimentLM > 0.28219700000000003 : 2.9999999999994276
+SentimentLM is missing : -4.1121172627441987E-4
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= 0.24350650000000001 : 0.001938462367780314
+SentimentLM > 0.24350650000000001 : -2.9999999999987117
+SentimentLM is missing : 7.561949768565479E-4
+
+
+Iteration 32
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.015326 : -0.12954745228197675
+NegativityGI > 0.015326 : 0.013793733855780492
+NegativityGI is missing : 9.605486827510933E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.251316 : -0.00626681834185668
+PositivityQDAP > 0.251316 : 0.3743729899226619
+PositivityQDAP is missing : -0.001565034508217197
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.020236 : 0.05431667545383836
+NegativityQDAP > 0.020236 : -0.02783717434286138
+NegativityQDAP is missing : 0.0014190902653952895
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.289916 : -0.0035277410632899293
+NegativityGI > 0.289916 : 1.097123392734667
+NegativityGI is missing : -0.00100218229918556
+
+
+Iteration 33
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.0378555 : 0.09178048509947836
+NegativityGI > 0.0378555 : -0.023299058049018887
+NegativityGI is missing : -0.002037271047098685
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.21579749999999998 : 0.007821231939703879
+PositivityQDAP > 0.21579749999999998 : -0.24070850533054614
+PositivityQDAP is missing : -9.924135125428815E-5
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.0155645 : -0.10724913809327732
+NegativityGI > 0.0155645 : 0.016048425031045144
+NegativityGI is missing : -9.525997876984898E-4
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.16619050000000002 : -0.021211345756073415
+PositivityQDAP > 0.16619050000000002 : 0.1089540459510429
+PositivityQDAP is missing : 0.002998774528174361
+
+
+Iteration 34
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.018434 : -0.12117446490265822
+NegativityGI > 0.018434 : 0.015512494066682044
+NegativityGI is missing : 0.0020699010140237998
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.1916115 : -0.010146485177903458
+PositivityQDAP > 0.1916115 : 0.1521518840811997
+PositivityQDAP is missing : -1.5375461355839867E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.1884655 : -0.022439390313219405
+PositivityGI > 0.1884655 : 0.05996926779707609
+PositivityGI is missing : 0.0024497490083908785
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.1924505 : 0.029749438689640386
+PositivityGI > 0.1924505 : -0.0988225080945477
+PositivityGI is missing : -0.004646191352803409
+
+
+Iteration 35
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.4083335 : -8.803626458932169E-4
+PositivityQDAP > 0.4083335 : 2.10057177253618
+PositivityQDAP is missing : -1.3031138760380792E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.28974 : 0.005097096336065303
+PositivityQDAP > 0.28974 : -0.5515366914929676
+PositivityQDAP is missing : 0.0024258104510288692
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.1662065 : 0.03061800770816098
+PositivityGI > 0.1662065 : -0.04419744157670483
+PositivityGI is missing : -0.0024730881423922504
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.024640500000000003 : -0.06130001953936676
+NegativityQDAP > 0.024640500000000003 : 0.03673865969114132
+NegativityQDAP is missing : 7.453023109780118E-4
+
+
+Iteration 36
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.4027025 : 0.004079906531655938
+PositivityGI > 0.4027025 : -1.1357494223212317
+PositivityGI is missing : 0.0025837473329480983
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.244173 : -0.0012357393778564913
+NegativityGI > 0.244173 : 0.5177554180384436
+NegativityGI is missing : 0.0017736375924658702
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.037665000000000004 : -0.03834705016966214
+NegativityQDAP > 0.037665000000000004 : 0.03913537012233903
+NegativityQDAP is missing : -0.002539274649934442
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.0062965 : 0.08959931061426674
+NegativityQDAP > 0.0062965 : -0.0366687451113762
+NegativityQDAP is missing : -8.04517888445052E-4
+
+
+Iteration 37
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.1222 : 0.22127273010936557
+SentimentLM > -0.1222 : -0.008049839993660426
+SentimentLM is missing : -9.525428730129057E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.215951 : 0.0042130440749590485
+NegativityGI > 0.215951 : -0.41331545568847405
+NegativityGI is missing : -0.0017266970294104263
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.0264905 : 0.057797196614386835
+NegativityQDAP > 0.0264905 : -0.036338494036412476
+NegativityQDAP is missing : 0.0035778510904379258
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.024640500000000003 : -0.08060814284282118
+NegativityQDAP > 0.024640500000000003 : 0.043715578340446946
+NegativityQDAP is missing : -0.0019251631039349352
+
+
+Iteration 38
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.2034485 : -0.9455836714865605
+SentimentLM > -0.2034485 : 0.0034356696304185764
+SentimentLM is missing : 0.00149593480226578
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.133677 : -0.007943438078209243
+NegativityQDAP > 0.133677 : 0.1731730893251346
+NegativityQDAP is missing : 0.00229823650251859
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.037665000000000004 : -0.04192807444279148
+NegativityQDAP > 0.037665000000000004 : 0.03967285462651293
+NegativityQDAP is missing : -0.004187164454734934
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.0062965 : 0.09193590613237786
+NegativityQDAP > 0.0062965 : -0.034294952719856574
+NegativityQDAP is missing : 0.0016373705677330238
+
+
+Iteration 39
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.0809135 : 0.04668398956195699
+PositivityQDAP > 0.0809135 : -0.031958523782283234
+PositivityQDAP is missing : -0.0011914627285884985
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.251316 : -0.006317010616742891
+PositivityQDAP > 0.251316 : 0.32954730429065626
+PositivityQDAP is missing : -0.0021702305921107367
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.06784899999999999 : 0.026608814339272886
+NegativityQDAP > 0.06784899999999999 : -0.06881818824413945
+NegativityQDAP is missing : 0.003334861929688135
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.0583635 : -0.04377316207448089
+NegativityQDAP > 0.0583635 : 0.07188675026677238
+NegativityQDAP is missing : -9.696823071867613E-4
+
+
+Iteration 40
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.031169000000000002 : -0.024933154811100085
+PositivityLM > 0.031169000000000002 : 0.06493837050889914
+PositivityLM is missing : 9.04039980210418E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= 0.09404499999999999 : 0.006576589052658339
+SentimentLM > 0.09404499999999999 : -0.5139177767277853
+SentimentLM is missing : 0.003596498174273981
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.27051000000000003 : -0.005453958928335982
+NegativityQDAP > 0.27051000000000003 : 1.3425830390702809
+NegativityQDAP is missing : -0.004601143586688772
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= 0.021055 : -0.02005678053330581
+SentimentLM > 0.021055 : 0.1119891878375316
+SentimentLM is missing : 0.0013446719352388638
+
+
+Iteration 41
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.053262000000000004 : 0.06255558296058371
+SentimentLM > -0.053262000000000004 : -0.020467676835245623
+SentimentLM is missing : 2.2356740932614498E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.14751550000000002 : -0.003143474307263117
+PositivityLM > 0.14751550000000002 : 0.9677080365493191
+PositivityLM is missing : -0.0018023463392778597
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= 0.0488655 : -0.005797171457173823
+SentimentLM > 0.0488655 : 0.15274736957561055
+SentimentLM is missing : 0.00177030659059146
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.002304 : 0.05495415087331875
+PositivityLM > 0.002304 : -0.054284950617983614
+PositivityLM is missing : -5.748179301346515E-4
+
+
+Iteration 42
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.09954950000000001 : -0.0051240970261727135
+PositivityLM > 0.09954950000000001 : 0.2694915323806912
+PositivityLM is missing : -9.210391142477823E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.0402955 : 0.05030224624399646
+SentimentLM > -0.0402955 : -0.028024001562920755
+SentimentLM is missing : -2.808518766814518E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.06639149999999999 : 0.010891727909504278
+PositivityLM > 0.06639149999999999 : -0.16413214548105134
+PositivityLM is missing : -2.7432301678048204E-4
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.023202 : -0.03777344201239918
+PositivityLM > 0.023202 : 0.0693551014563418
+PositivityLM is missing : 0.0014116195462310047
+
+
+Iteration 43
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= 0.067232 : 0.006976314655487328
+SentimentLM > 0.067232 : -0.2965836676053287
+SentimentLM is missing : 0.0014909768216301942
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.037927 : -0.017184828049788655
+PositivityLM > 0.037927 : 0.08302798146192668
+PositivityLM is missing : 2.157710199366204E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.106763 : -0.004420137045301222
+PositivityLM > 0.106763 : 0.35001103240794734
+PositivityLM is missing : -8.941794478325156E-4
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.049100000000000005 : 0.020040777618952954
+PositivityLM > 0.049100000000000005 : -0.12359548342518867
+PositivityLM is missing : -3.6283373413338685E-4
+
+
+Iteration 44
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.13245600000000002 : 2.679084786537189E-4
+PositivityLM > 0.13245600000000002 : -1.064100139641601
+PositivityLM is missing : -7.538994451825642E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.21579749999999998 : 0.008482333160326474
+PositivityQDAP > 0.21579749999999998 : -0.2304301378536889
+PositivityQDAP is missing : 0.0010146807009052971
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.040733 : -0.03082070809467784
+NegativityQDAP > 0.040733 : 0.03774824759070497
+NegativityQDAP is missing : -8.894790713406222E-4
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= 0.0569805 : -0.010451717832313625
+SentimentLM > 0.0569805 : 0.22317008996856405
+SentimentLM is missing : 7.220619861537342E-4
+
+
+Iteration 45
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= 0.1096095 : -0.0015498042458909804
+SentimentLM > 0.1096095 : 0.6884420929755233
+SentimentLM is missing : 9.228144185685803E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.02837 : 0.12354937423305572
+PositivityQDAP > 0.02837 : -0.010889382457135745
+PositivityQDAP is missing : -6.427263607907963E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.2572175 : 0.003053049653409128
+NegativityGI > 0.2572175 : -1.0688529291352384
+NegativityGI is missing : 0.0020143979391826832
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.032877 : -0.0837671345351947
+NegativityGI > 0.032877 : 0.02301888480101012
+NegativityGI is missing : -0.0026597387270159397
+
+
+Iteration 46
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.1570725 : 0.35804468739994727
+SentimentLM > -0.1570725 : -3.622834387568776E-4
+SentimentLM is missing : 0.002667223102568793
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.3827835 : 0.001846462174677456
+PositivityGI > 0.3827835 : -1.0560470948358822
+PositivityGI is missing : 6.84606547945855E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= 0.0095695 : -0.017895597885615188
+SentimentLM > 0.0095695 : 0.062007482780133995
+SentimentLM is missing : -0.0028824371039076905
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.002304 : 0.044590026654065536
+PositivityLM > 0.002304 : -0.04224972254479074
+PositivityLM is missing : 6.613177124026867E-4
+
+
+Iteration 47
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.188988 : 0.003497436104055193
+NegativityQDAP > 0.188988 : -0.3760425802415634
+NegativityQDAP is missing : 5.430575060490007E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.109226 : -0.0046147251702156064
+PositivityLM > 0.109226 : 0.39697916599903926
+PositivityLM is missing : -0.0014694637833123695
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.005038 : 0.03345381865887002
+SentimentLM > -0.005038 : -0.03856745558895668
+SentimentLM is missing : 3.090421924951973E-4
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.016621 : -0.043144451464164
+PositivityLM > 0.016621 : 0.0582595450026742
+PositivityLM is missing : 6.456243526573868E-4
+
+
+Iteration 48
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.17988749999999998 : -0.007325719449410638
+NegativityGI > 0.17988749999999998 : 0.16305628236498612
+NegativityGI is missing : 3.4046055234011527E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.2294195 : 0.004426512998637218
+NegativityQDAP > 0.2294195 : -0.664634402614732
+NegativityQDAP is missing : 0.0026062000639236107
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.0257515 : -0.04553913659176824
+SentimentLM > -0.0257515 : 0.029922999907410673
+SentimentLM is missing : 3.817274586910955E-5
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.0051545 : 0.13562993616927718
+PositivityQDAP > 0.0051545 : -0.01407759335690313
+PositivityQDAP is missing : -0.0029850457621285616
+
+
+Iteration 49
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.1991735 : 0.0072282370339028495
+NegativityGI > 0.1991735 : -0.21660560862756498
+NegativityGI is missing : 7.918526586182372E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.244173 : -0.0038009785258710386
+NegativityGI > 0.244173 : 0.4236537532143805
+NegativityGI is missing : -0.0012806585594875267
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.0575815 : 0.13002873849196542
+PositivityGI > 0.0575815 : -0.010887336511439319
+PositivityGI is missing : -0.001096324442702317
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.0382185 : -0.11804194051932605
+PositivityQDAP > 0.0382185 : 0.01879581338118893
+PositivityQDAP is missing : 0.002009578342495152
+
+
+Iteration 50
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= 0.041559 : -0.010002459230410777
+SentimentLM > 0.041559 : 0.1393365365390222
+SentimentLM is missing : -8.688889042878072E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.215951 : 0.0031465641194525834
+NegativityGI > 0.215951 : -0.34084102239753283
+NegativityGI is missing : -0.0014830627088623953
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.0406785 : -0.18093950862838581
+PositivityGI > 0.0406785 : 0.00986128337982348
+PositivityGI is missing : 8.852918980005989E-4
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.0127395 : 0.09884610864933327
+NegativityGI > 0.0127395 : -0.018335023736543853
+NegativityGI is missing : 0.0011345840777801524
+
+
+Iteration 51
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.197738 : 0.01579475421579282
+PositivityGI > 0.197738 : -0.06712459737948477
+PositivityGI is missing : -0.0011721653780944147
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.32666649999999997 : -9.312307546037076E-5
+NegativityQDAP > 0.32666649999999997 : 1.7752706305447314
+NegativityQDAP is missing : 4.577839939396116E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.016261 : 0.04782536606478798
+NegativityQDAP > 0.016261 : -0.019014807898758083
+NegativityQDAP is missing : 0.0019744952625920104
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.024640500000000003 : -0.05234827244436026
+NegativityQDAP > 0.024640500000000003 : 0.026771510054116855
+NegativityQDAP is missing : -0.001953784160135922
+
+
+Iteration 52
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.11586550000000001 : -0.051678865411508
+PositivityGI > 0.11586550000000001 : 0.023995192182524366
+PositivityGI is missing : 1.463554863294846E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.21240599999999998 : -1.1753565642126498
+SentimentLM > -0.21240599999999998 : 0.0022514382763951387
+SentimentLM is missing : 0.0015431232223444987
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.1073915 : -0.021556138105922728
+NegativityGI > 0.1073915 : 0.0662586551825011
+NegativityGI is missing : -0.003511013886131928
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.0062965 : 0.07448537578887215
+NegativityQDAP > 0.0062965 : -0.026145305876117256
+NegativityQDAP is missing : 0.0027136592559826567
+
+
+Iteration 53
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.032522499999999996 : 0.15990858991383938
+PositivityGI > 0.032522499999999996 : -0.007921406663455187
+PositivityGI is missing : -5.718089176601155E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.207615 : 1.2655381117302964
+SentimentLM > -0.207615 : -0.004543394996487084
+SentimentLM is missing : -0.0033486560616587473
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.2403705 : 0.009053301201524106
+PositivityQDAP > 0.2403705 : -0.16627611681982143
+PositivityQDAP is missing : 0.004015697160881812
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.032877 : -0.07126367884507821
+NegativityGI > 0.032877 : 0.02078081889806515
+NegativityGI is missing : -0.0011519646276864448
+
+
+Iteration 54
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.1127895 : -0.01843056045697612
+NegativityGI > 0.1127895 : 0.06076941672971911
+NegativityGI is missing : 0.00218509192991664
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.120562 : -0.04369672852866572
+PositivityGI > 0.120562 : 0.021497050048684203
+PositivityGI is missing : 6.157983975956995E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.1885425 : -0.011679910426321953
+PositivityQDAP > 0.1885425 : 0.09747395317912151
+PositivityQDAP is missing : -0.001996647089782737
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.035805500000000004 : -0.05412237102247884
+SentimentLM > -0.035805500000000004 : 0.026282968062741083
+SentimentLM is missing : 2.7019929845243696E-5
+
+
+Iteration 55
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.0846265 : 0.03284325824610279
+NegativityGI > 0.0846265 : -0.0424922289354762
+NegativityGI is missing : -0.002755936278709158
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.1478565 : 0.033402999352598196
+PositivityGI > 0.1478565 : -0.03729228759277663
+PositivityGI is missing : -0.002068952756575258
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.14363399999999998 : -0.03122251495415603
+PositivityGI > 0.14363399999999998 : 0.027587870133308053
+PositivityGI is missing : 0.0016544432545978665
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.007353 : 0.042196868559405215
+PositivityLM > 0.007353 : -0.03746187218225068
+PositivityLM is missing : 0.002371957462848091
+
+
+Iteration 56
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.282535 : 0.003645509941941413
+PositivityQDAP > 0.282535 : -0.4043320039872881
+PositivityQDAP is missing : 0.001234962123388915
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.1257345 : -0.04322137791166613
+PositivityGI > 0.1257345 : 0.02315840166934832
+PositivityGI is missing : -6.901302097865238E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.059174000000000004 : 0.14312648214077694
+PositivityGI > 0.059174000000000004 : -0.011381891758119603
+PositivityGI is missing : -4.676091159829993E-6
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.11519499999999999 : -0.041700618358631834
+PositivityQDAP > 0.11519499999999999 : 0.051765726448436605
+PositivityQDAP is missing : -3.436291253145602E-4
+
+
+Iteration 57
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.14560050000000002 : -0.01616415886320577
+PositivityQDAP > 0.14560050000000002 : 0.06573761029905106
+PositivityQDAP is missing : -0.0017377749170442642
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.21240599999999998 : -1.1963996437576645
+SentimentLM > -0.21240599999999998 : -6.903305245018355E-4
+SentimentLM is missing : -0.0014403307933844988
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.081191 : -0.03989365053844009
+PositivityQDAP > 0.081191 : 0.022694481870516956
+PositivityQDAP is missing : 0.0022150850604181053
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.0051545 : 0.13026695742350566
+PositivityQDAP > 0.0051545 : -0.010336077710570485
+PositivityQDAP is missing : 1.5848466611417144E-4
+
+
+Iteration 58
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.1823725 : -0.005958959236800399
+NegativityGI > 0.1823725 : 0.14901936018687223
+NegativityGI is missing : 2.0248835582948235E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.1916115 : -0.007708587673522379
+PositivityQDAP > 0.1916115 : 0.10787764366089338
+PositivityQDAP is missing : -5.399325229939375E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.0930955 : 0.03676168840461937
+PositivityQDAP > 0.0930955 : -0.026881763584701266
+PositivityQDAP is missing : -5.429826551230322E-4
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.032086500000000004 : -0.12127006412861158
+PositivityQDAP > 0.032086500000000004 : 0.015516517015633636
+PositivityQDAP is missing : 0.001064330414724589
+
+
+Iteration 59
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.1991735 : 0.004473500877327854
+NegativityGI > 0.1991735 : -0.19107859847065856
+NegativityGI is missing : -0.001065111636911541
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= 0.04959 : 0.0054568546788568
+SentimentLM > 0.04959 : -0.1579295108172038
+SentimentLM is missing : 3.9873447152022096E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.08427399999999999 : -0.045614553585933894
+PositivityQDAP > 0.08427399999999999 : 0.024446714817538906
+PositivityQDAP is missing : -1.1732506935663128E-4
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= 0.16025650000000002 : -5.55259099496317E-4
+SentimentLM > 0.16025650000000002 : 0.965473665633429
+SentimentLM is missing : 6.509377715893561E-4
+
+
+Iteration 60
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= 0.051615 : 0.00522225031727336
+SentimentLM > 0.051615 : -0.15796743580735897
+SentimentLM is missing : -0.0010759688751475597
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.289916 : 7.947375251685928E-4
+NegativityGI > 0.289916 : -1.0881612883957974
+NegativityGI is missing : 1.2076872643138193E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.218466 : 0.0031388604863922765
+NegativityGI > 0.218466 : -0.33741345718247884
+NegativityGI is missing : 5.881330843513712E-4
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.2886905 : -0.0010476029958317765
+NegativityQDAP > 0.2886905 : 1.0084214829988105
+NegativityQDAP is missing : 5.392986845046279E-5
+
+
+Iteration 61
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.11586550000000001 : -0.04730315945260998
+PositivityGI > 0.11586550000000001 : 0.021616415041398888
+PositivityGI is missing : -4.695463053206011E-5
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.2011905 : -0.0010121366568739034
+NegativityQDAP > 0.2011905 : 0.36781136872642595
+NegativityQDAP is missing : 0.0010715909461110618
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.0968945 : 0.13062462096372435
+SentimentLM > -0.0968945 : -0.007296178696318059
+SentimentLM is missing : -2.2661598458290072E-4
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.232894 : 0.0029152809875000736
+NegativityGI > 0.232894 : -0.32061815455499026
+NegativityGI is missing : -7.676745761579822E-4
+
+
+Iteration 62
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.4083335 : -7.454975505947296E-4
+PositivityQDAP > 0.4083335 : 1.4908938566797616
+PositivityQDAP is missing : -1.9062807520361027E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.2294195 : 8.701378622090214E-4
+NegativityQDAP > 0.2294195 : -0.6308581362448177
+NegativityQDAP is missing : -6.295162304860337E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.3054 : 0.002984180154078383
+PositivityQDAP > 0.3054 : -0.33451468218029184
+PositivityQDAP is missing : 8.214894388299018E-4
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.0765565 : 0.09339157196630385
+SentimentLM > -0.0765565 : -0.01523560317305337
+SentimentLM is missing : -2.3203722310722214E-4
+
+
+Iteration 63
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.1345345 : 0.016900237879640893
+PositivityQDAP > 0.1345345 : -0.05201525019484555
+PositivityQDAP is missing : 0.0010289854292292798
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.1130555 : 0.15427288081510315
+SentimentLM > -0.1130555 : -0.0057956982199053346
+SentimentLM is missing : 0.0014378907400523823
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.1301525 : -0.002573024357687473
+PositivityLM > 0.1301525 : 0.45505663098814003
+PositivityLM is missing : -0.0010706262710655499
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.1040315 : -0.15046295072968516
+SentimentLM > -0.1040315 : 0.008248993075210416
+SentimentLM is missing : -9.950992072083993E-4
+
+
+Iteration 64
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.0797725 : -0.005895363886690975
+PositivityLM > 0.0797725 : 0.15086389122517968
+PositivityLM is missing : -5.312028920280253E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.1359785 : -0.28480352412531834
+SentimentLM > -0.1359785 : 0.005319131445749767
+SentimentLM is missing : -2.669693602434575E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= 0.13961050000000003 : 0.001100864896007673
+SentimentLM > 0.13961050000000003 : -0.9849222616241657
+SentimentLM is missing : 2.6468488818941525E-4
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.1659025 : 0.41740214320551833
+SentimentLM > -0.1659025 : -0.0026943127495057647
+SentimentLM is missing : 3.922750800989662E-4
+
+
+Iteration 65
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.4027025 : 6.227330940164466E-4
+PositivityGI > 0.4027025 : -1.0977232662639897
+PositivityGI is missing : -1.8198715556853062E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.17519200000000001 : 0.5377528651434519
+SentimentLM > -0.17519200000000001 : -0.002258171037528135
+SentimentLM is missing : -6.828316842102398E-5
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.0930955 : 0.02918033363238338
+PositivityQDAP > 0.0930955 : -0.02000612499425119
+PositivityQDAP is missing : 3.8293163574954555E-4
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.2649125 : 0.0012027064783403144
+NegativityQDAP > 0.2649125 : -0.8923919140316025
+NegativityQDAP is missing : -2.58675508103144E-4
+
+
+Iteration 66
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.341507 : -0.0013087209122727437
+PositivityGI > 0.341507 : 0.4023785665448287
+PositivityGI is missing : 7.111707316916403E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.215951 : 0.0030630046624353655
+NegativityGI > 0.215951 : -0.26195683510596934
+NegativityGI is missing : -2.475826781086718E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.0950645 : -0.05747439461086144
+PositivityGI > 0.0950645 : 0.013059631377818254
+PositivityGI is missing : -4.263480236313523E-5
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.2330315 : -0.00272008033845395
+NegativityQDAP > 0.2330315 : 0.6030110682892328
+NegativityQDAP is missing : -3.0061865295512286E-4
+
+
+Iteration 67
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.3565375 : 0.001993804770809043
+PositivityGI > 0.3565375 : -0.5485721292295546
+PositivityGI is missing : 1.4990604470269798E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.109226 : -0.0019392283385248653
+PositivityLM > 0.109226 : 0.31786681257038724
+PositivityLM is missing : 6.172404896460992E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.385856 : -0.001471445605439965
+PositivityGI > 0.385856 : 0.3544903874143126
+PositivityGI is missing : 2.6955558188116515E-4
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.4555555 : -0.0015962129064516118
+NegativityGI > 0.4555555 : 2.0148960178860524
+NegativityGI is missing : -0.0011001758401253069
+
+
+Iteration 68
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.40972200000000003 : -0.0011093791012705605
+NegativityGI > 0.40972200000000003 : 1.6410381605057296
+NegativityGI is missing : -3.8654543619018496E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.244173 : -0.0022658831780202194
+NegativityGI > 0.244173 : 0.3632040599350366
+NegativityGI is missing : -1.9159131219084944E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.442222 : 4.451721913943505E-4
+PositivityGI > 0.442222 : -0.8447468056648527
+PositivityGI is missing : -3.266493578790838E-4
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.442222 : -2.057453878907538E-4
+PositivityGI > 0.442222 : 0.9616346647896392
+PositivityGI is missing : 9.400699288743098E-4
+
+
+Iteration 69
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.341507 : -0.0017903102004521384
+PositivityGI > 0.341507 : 0.4234205809376175
+PositivityGI is missing : 2.756257768493991E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= 0.09404499999999999 : 0.0016849602057115607
+SentimentLM > 0.09404499999999999 : -0.3870376820129447
+SentimentLM is missing : -2.1848539861443587E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.41886 : -0.0014702604354562704
+PositivityGI > 0.41886 : 0.9162692418063595
+PositivityGI is missing : -2.258674762584435E-4
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.41886 : 0.0016463471389728803
+PositivityGI > 0.41886 : -0.7985034226338341
+PositivityGI is missing : 2.7343366514943283E-4
+
+
+Iteration 70
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.018779999999999998 : -0.09496503744800357
+PositivityQDAP > 0.018779999999999998 : 0.007887410468709201
+PositivityQDAP is missing : 1.5605665208372392E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.3388465 : -0.0023065456510950365
+PositivityGI > 0.3388465 : 0.39806239725155146
+PositivityGI is missing : -5.065094672668526E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.39433799999999997 : 0.0016047129397483107
+PositivityGI > 0.39433799999999997 : -0.461477744242079
+PositivityGI is missing : -5.321530361321462E-5
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.3984125 : -0.0016275307375258543
+PositivityGI > 0.3984125 : 0.5147991277886157
+PositivityGI is missing : 4.517134992490444E-4
+
+
+Iteration 71
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.4555555 : 3.2867737616075016E-4
+NegativityGI > 0.4555555 : -1.6394622051225458
+NegativityGI is missing : -6.868318311047618E-5
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.3140055 : 0.0034892988715838017
+PositivityGI > 0.3140055 : -0.29664803717142185
+PositivityGI is missing : 3.197018983460278E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.385856 : -0.0014591742324441756
+PositivityGI > 0.385856 : 0.5132079484327328
+PositivityGI is missing : 8.617851120921946E-4
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.385856 : 0.001145288879436685
+PositivityGI > 0.385856 : -0.46368083688425127
+PositivityGI is missing : -0.0013588503918770085
+
+
+Iteration 72
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.40972200000000003 : -4.476819417955714E-4
+NegativityGI > 0.40972200000000003 : 1.6496939912293387
+NegativityGI is missing : 2.481910670266097E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.0804085 : -0.06934328121308626
+PositivityGI > 0.0804085 : 0.009929041984141358
+PositivityGI is missing : -2.64261157221982E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.3708995 : 0.0019598782568525513
+PositivityGI > 0.3708995 : -0.4356118560063123
+PositivityGI is missing : -5.483502157298512E-4
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.3708995 : -0.0025983110505846817
+PositivityGI > 0.3708995 : 0.5001141678262764
+PositivityGI is missing : 7.51499877201594E-4
+
+
+Iteration 73
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.4555555 : 3.763998066386647E-4
+NegativityGI > 0.4555555 : -1.6500927872416646
+NegativityGI is missing : -2.4996946126497717E-5
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.104413 : 0.024949079316536168
+PositivityQDAP > 0.104413 : -0.028502707432256618
+PositivityQDAP is missing : -3.057825348589348E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.3651515 : -0.0012263380571131714
+PositivityGI > 0.3651515 : 0.42349401257703556
+PositivityGI is missing : 0.0014688913244715472
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.335145 : 0.0028105556338533662
+PositivityGI > 0.335145 : -0.3241284537231193
+PositivityGI is missing : -0.0015258630837774727
+
+
+Iteration 74
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.40972200000000003 : 4.2677963335624057E-4
+NegativityGI > 0.40972200000000003 : 1.5280815639543797
+NegativityGI is missing : 0.001017358087126219
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.06639149999999999 : -0.00628009045167295
+PositivityLM > 0.06639149999999999 : 0.11935965577108033
+PositivityLM is missing : -3.0390190094255285E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.1662065 : 0.02186318072405921
+PositivityGI > 0.1662065 : -0.0300957518826683
+PositivityGI is missing : -0.0010512279671919642
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.28519300000000003 : -0.007173614539996265
+PositivityGI > 0.28519300000000003 : 0.14789310877839065
+PositivityGI is missing : 7.697846554468228E-4
+
+
+Iteration 75
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.2440475 : 1.4549207737329701
+SentimentLM > -0.2440475 : -4.2599323494490386E-4
+SentimentLM is missing : 1.196478633708002E-5
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.0582925 : 0.020099411307302768
+NegativityQDAP > 0.0582925 : -0.033644601580916644
+NegativityQDAP is missing : -6.575388012016912E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.260572 : -0.00808068651435537
+PositivityGI > 0.260572 : 0.10268281543925506
+PositivityGI is missing : 4.909101546719867E-4
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.2012785 : 0.01775193567222125
+PositivityGI > 0.2012785 : -0.06114020716213393
+PositivityGI is missing : 4.053922370296244E-5
+
+
+Iteration 76
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.2034485 : -0.8127844756589655
+SentimentLM > -0.2034485 : 5.320783883623312E-4
+SentimentLM is missing : -5.984319474354985E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.13069350000000002 : 0.1724956330005833
+SentimentLM > -0.13069350000000002 : -0.0046097327605774275
+SentimentLM is missing : -1.7430556404608155E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.2886755 : 0.005934915335345983
+PositivityGI > 0.2886755 : -0.13380705194128664
+PositivityGI is missing : 1.70550618694392E-4
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.180882 : -0.014875742132485447
+PositivityQDAP > 0.180882 : 0.09975016081754205
+PositivityQDAP is missing : 4.7526639889161355E-4
+
+
+Iteration 77
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.1570725 : 0.3331960516591711
+SentimentLM > -0.1570725 : -0.003443135185010154
+SentimentLM is missing : -7.049245778385404E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.1359785 : -0.23247947004366348
+SentimentLM > -0.1359785 : 0.005268130216804001
+SentimentLM is missing : 7.86653959341545E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.1885425 : -0.008831120775224589
+PositivityQDAP > 0.1885425 : 0.0994784506404161
+PositivityQDAP is missing : 6.65157906182046E-4
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.18795299999999998 : 0.01190678873525461
+PositivityQDAP > 0.18795299999999998 : -0.10336149639295919
+PositivityQDAP is missing : -0.001045138286462765
+
+
+Iteration 78
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.1054615 : 0.008602819925111752
+NegativityQDAP > 0.1054615 : -0.07387082359960813
+NegativityQDAP is missing : -8.884229812448711E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.13069350000000002 : 0.19063739102758095
+SentimentLM > -0.13069350000000002 : -0.005167421221908281
+SentimentLM is missing : -3.208298689059334E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.2101015 : 0.007115196072735854
+PositivityQDAP > 0.2101015 : -0.13770554602178064
+PositivityQDAP is missing : -7.482016201968315E-4
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.180882 : -0.014830208932953011
+PositivityQDAP > 0.180882 : 0.11119262820199738
+PositivityQDAP is missing : 0.0020372142905902653
+
+
+Iteration 79
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.11336750000000001 : -0.016024037552989298
+NegativityGI > 0.11336750000000001 : 0.048447609687299525
+NegativityGI is missing : 4.916489589431872E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.295207 : 0.0017360872469841893
+PositivityQDAP > 0.295207 : -0.47139745096413244
+PositivityQDAP is missing : 3.218978473628961E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.20101000000000002 : -0.006081786553894192
+PositivityQDAP > 0.20101000000000002 : 0.11133021652245344
+PositivityQDAP is missing : 0.0013774153518064957
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.20101000000000002 : 0.009491945416915247
+PositivityQDAP > 0.20101000000000002 : -0.12991556656765585
+PositivityQDAP is missing : -0.0025002212407308462
+
+
+Iteration 80
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.036039 : 0.06377986658792509
+PositivityQDAP > 0.036039 : -0.010604063346155827
+PositivityQDAP is missing : -6.949245552832299E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.2567765 : -0.0034727498200133123
+PositivityQDAP > 0.2567765 : 0.28685557628299957
+PositivityQDAP is missing : -2.5604228724977E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.2101015 : 0.005736640228994777
+PositivityQDAP > 0.2101015 : -0.13018001119074385
+PositivityQDAP is missing : -0.0016355434098169546
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.218466 : -0.0064137429348606455
+PositivityQDAP > 0.218466 : 0.14683285027743928
+PositivityQDAP is missing : 0.002930262797493075
+
+
+Iteration 81
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.031169000000000002 : -0.016864130107302172
+PositivityLM > 0.031169000000000002 : 0.040511223423851994
+PositivityLM is missing : -3.112371382043464E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.21579749999999998 : 0.005214414690426651
+PositivityQDAP > 0.21579749999999998 : -0.15245527929368846
+PositivityQDAP is missing : 6.57478883392539E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.20101000000000002 : -0.006279433266970304
+PositivityQDAP > 0.20101000000000002 : 0.10244377641908993
+PositivityQDAP is missing : 6.258516662085011E-4
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.20101000000000002 : 0.008364227000110094
+PositivityQDAP > 0.20101000000000002 : -0.10352400403190885
+PositivityQDAP is missing : -0.0012009213689588255
+
+
+Iteration 82
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= 0.00137 : 0.012707897353334392
+SentimentLM > 0.00137 : -0.05707996973614675
+SentimentLM is missing : -1.5036808048513145E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.1916115 : -0.007399936776453154
+PositivityQDAP > 0.1916115 : 0.0992142754906869
+PositivityQDAP is missing : -8.498460154941034E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.1638635 : 0.01175310150763492
+PositivityQDAP > 0.1638635 : -0.06449917657090198
+PositivityQDAP is missing : -5.302779249272743E-4
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.016621 : -0.02969920514464868
+PositivityLM > 0.016621 : 0.04238324377049174
+PositivityLM is missing : 0.0016699129361836687
+
+
+Iteration 83
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= 0.041559 : -0.006711919652379046
+SentimentLM > 0.041559 : 0.1127557205002753
+SentimentLM is missing : 6.657799386536478E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.0048115 : -0.033597131842802476
+PositivityLM > 0.0048115 : 0.024483248231825974
+PositivityLM is missing : 0.0012105588035711586
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.15531 : -0.0276307214089766
+PositivityGI > 0.15531 : 0.027280231691967884
+PositivityGI is missing : -5.46541645843522E-4
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.007353 : 0.03800043711408061
+PositivityLM > 0.007353 : -0.04032282275626946
+PositivityLM is missing : -0.0011137906584751086
+
+
+Iteration 84
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= 0.051615 : 0.006385112519857402
+SentimentLM > 0.051615 : -0.14406971256587178
+SentimentLM is missing : 5.923835419638113E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.014311500000000001 : 0.03110507287555937
+PositivityLM > 0.014311500000000001 : -0.03253739118095846
+PositivityLM is missing : -8.610470428503665E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= 0.051615 : -0.00443755519504533
+SentimentLM > 0.051615 : 0.12404312483046091
+SentimentLM is missing : 0.0011581790143681782
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.016621 : -0.036347808778423224
+PositivityLM > 0.016621 : 0.04464452298298413
+PositivityLM is missing : -0.0010923397647575781
+
+
+Iteration 85
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= 0.041842000000000004 : -0.008227204825886996
+SentimentLM > 0.041842000000000004 : 0.12393713897958114
+SentimentLM is missing : -5.338538678676748E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.026030499999999998 : -0.02061725799985488
+PositivityLM > 0.026030499999999998 : 0.04424298539845068
+PositivityLM is missing : -5.601882079026232E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= 0.0367005 : 0.0068179440633042085
+SentimentLM > 0.0367005 : -0.08814437969419078
+SentimentLM is missing : -6.27620464277716E-4
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.007353 : 0.032668925199076417
+PositivityLM > 0.007353 : -0.029263064879973762
+PositivityLM is missing : 0.0018242931172670162
+
+
+Iteration 86
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= 0.031373 : 0.009228913426656073
+SentimentLM > 0.031373 : -0.09184114154874345
+SentimentLM is missing : 3.5873077005490506E-5
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= 0.020305 : 0.010866395358744342
+SentimentLM > 0.020305 : -0.09270643384533234
+SentimentLM is missing : 5.094262295563857E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.0186745 : -0.029888899254106656
+SentimentLM > -0.0186745 : 0.02581777622183508
+SentimentLM is missing : 2.859537715336939E-4
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.024640500000000003 : -0.04449670018203609
+NegativityQDAP > 0.024640500000000003 : 0.023812576958550238
+NegativityQDAP is missing : -9.14831386454318E-4
+
+
+Iteration 87
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.074271 : -0.061874986924267704
+PositivityGI > 0.074271 : 0.011325036170133213
+PositivityGI is missing : 0.0018053807705683616
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.180164 : 0.008322843849819931
+PositivityQDAP > 0.180164 : -0.08760687448069487
+PositivityQDAP is missing : 3.229385596699531E-5
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.005038 : 0.030960349431096327
+SentimentLM > -0.005038 : -0.0408706602041764
+SentimentLM is missing : -0.002011105082680954
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.035805500000000004 : -0.044544563633927954
+SentimentLM > -0.035805500000000004 : 0.0228583427601161
+SentimentLM is missing : 9.67658778119236E-4
+
+
+Iteration 88
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.273156 : 0.006504277283055603
+PositivityGI > 0.273156 : -0.11983662780065141
+PositivityGI is missing : 0.0011065837205298918
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.238584 : -0.005348504480637045
+PositivityGI > 0.238584 : 0.0925549095959827
+PositivityGI is missing : 0.0017651043553889602
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.0186745 : -0.0286961543592604
+SentimentLM > -0.0186745 : 0.028131540558206977
+SentimentLM is missing : 0.002072520364476195
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.024315999999999997 : 0.03974421468356149
+SentimentLM > -0.024315999999999997 : -0.035702601959057785
+SentimentLM is missing : -0.005381182762839331
+
+
+Iteration 89
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.0805525 : 0.024350677685258292
+NegativityGI > 0.0805525 : -0.024332675969277857
+NegativityGI is missing : -1.2912168544644862E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.2648315 : 0.006341320507057808
+PositivityGI > 0.2648315 : -0.12957133439327767
+PositivityGI is missing : 0.0010225177702416247
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.0082985 : 0.02650685211651609
+SentimentLM > -0.0082985 : -0.03497408196980909
+SentimentLM is missing : -0.0023005932409500933
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= 0.0710085 : -0.0035907010085923885
+SentimentLM > 0.0710085 : 0.17343660283690981
+SentimentLM is missing : 0.001977792855934008
+
+
+Iteration 90
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.0083335 : -0.059679677210750674
+NegativityQDAP > 0.0083335 : 0.014171454027904757
+NegativityQDAP is missing : 8.675948821781173E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.1359785 : -0.1731118943590419
+SentimentLM > -0.1359785 : 0.004829668803990948
+SentimentLM is missing : 0.0015395512586205964
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.1770205 : -0.0012077604178691132
+NegativityQDAP > 0.1770205 : 0.2816047889529649
+NegativityQDAP is missing : 0.001183107129265093
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.049100000000000005 : 0.01127898583141891
+PositivityLM > 0.049100000000000005 : -0.09726026100689114
+PositivityLM is missing : -0.003824058038128516
+
+
+Iteration 91
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.002304 : 0.030304248705497003
+PositivityLM > 0.002304 : -0.021908918411380516
+PositivityLM is missing : -0.0012536964755219435
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.0804085 : -0.011902589948311273
+NegativityQDAP > 0.0804085 : 0.047669447882782344
+NegativityQDAP is missing : 0.0018140945943604778
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.1662065 : 0.022745621917456823
+PositivityGI > 0.1662065 : -0.029351159625044067
+PositivityGI is missing : -2.154349224312161E-4
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.016621 : -0.028305598464623133
+PositivityLM > 0.016621 : 0.03539300038951182
+PositivityLM is missing : -5.120580384513352E-4
+
+
+Iteration 92
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.0112045 : -0.03349649103372163
+PositivityLM > 0.0112045 : 0.028446739805049623
+PositivityLM is missing : 0.0012234887656277595
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.090158 : 0.013557361314232038
+NegativityQDAP > 0.090158 : -0.06588049321784334
+NegativityQDAP is missing : -7.018788942255199E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.0406785 : -0.11183611581042491
+PositivityGI > 0.0406785 : 0.003932808328364993
+PositivityGI is missing : -0.0014271407714276999
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.007353 : 0.033834725285908
+PositivityLM > 0.007353 : -0.031237976295496454
+PositivityLM is missing : 0.0014813195635364868
+
+
+Iteration 93
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.002304 : 0.033911762385249386
+PositivityLM > 0.002304 : -0.023828379214475143
+PositivityLM is missing : -0.0010226982187852604
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.13069350000000002 : 0.16403103205079156
+SentimentLM > -0.13069350000000002 : -0.002688545503088646
+SentimentLM is missing : 0.0014378313847068236
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.0259785 : 0.14230860979174403
+PositivityGI > 0.0259785 : -0.0024834945425005776
+PositivityGI is missing : 0.002032150569076986
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.058397500000000005 : -0.1014379923801111
+PositivityGI > 0.058397500000000005 : 0.0068193727651397595
+PositivityGI is missing : -0.0031807687936744665
+
+
+Iteration 94
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.4555555 : 1.767273245624538E-5
+NegativityGI > 0.4555555 : -1.5623295376565403
+NegativityGI is missing : -3.4985472732913185E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.007663 : -0.04994253994667359
+NegativityQDAP > 0.007663 : 0.009887225485090875
+NegativityQDAP is missing : -9.124629674636336E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.0406785 : -0.1274721217635532
+PositivityGI > 0.0406785 : 0.005360288407231943
+PositivityGI is missing : -8.274948324303676E-4
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.0051545 : 0.11614676284516094
+PositivityQDAP > 0.0051545 : -0.007017742730312695
+PositivityQDAP is missing : 0.002288233321660584
+
+
+Iteration 95
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.1823725 : -0.0031359218106617385
+NegativityGI > 0.1823725 : 0.1209902944245553
+NegativityGI is missing : 0.001762278744290228
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.0152685 : 0.04778940729195738
+NegativityQDAP > 0.0152685 : -0.01279514835946263
+NegativityQDAP is missing : 3.6532703944917383E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.042934 : 0.07064194974617137
+PositivityQDAP > 0.042934 : -0.010276363834493414
+PositivityQDAP is missing : -3.504288838527619E-4
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.032086500000000004 : -0.10403850326518159
+PositivityQDAP > 0.032086500000000004 : 0.01057782434003939
+PositivityQDAP is missing : -0.0014439109120249548
+
+
+Iteration 96
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.1991735 : 0.004188041975579343
+NegativityGI > 0.1991735 : -0.19104296906769852
+NegativityGI is missing : -0.001194799228586635
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.125327 : -0.010686496649635453
+NegativityGI > 0.125327 : 0.05611517241135589
+NegativityGI is missing : 8.449258348491501E-5
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.081191 : -0.038616031416615314
+PositivityQDAP > 0.081191 : 0.01950577766348997
+PositivityQDAP is missing : 4.5643294053198194E-4
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.0836245 : 0.044202477564007886
+PositivityQDAP > 0.0836245 : -0.023164160824089123
+PositivityQDAP is missing : 3.5955387571885646E-4
+
+
+Iteration 97
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+NegativityGI <= 0.1823725 : -0.0048067263407123905
+NegativityGI > 0.1823725 : 0.13783117803149422
+NegativityGI is missing : 7.718826745844119E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.06866449999999999 : -0.050679830561527146
+SentimentLM > -0.06866449999999999 : 0.011646683922121816
+SentimentLM is missing : 2.4105658692249486E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.0930955 : 0.032280953893654284
+PositivityQDAP > 0.0930955 : -0.025660100115210034
+PositivityQDAP is missing : -0.0016375423369376955
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.0706475 : -0.0528160817841302
+PositivityQDAP > 0.0706475 : 0.019725337181349882
+PositivityQDAP is missing : 0.0011691358607041295
+
+
+Iteration 98
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.01061 : -0.029653799965811443
+PositivityLM > 0.01061 : 0.02060153378875445
+PositivityLM is missing : -0.0010161850453501973
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.0840405 : 0.07583469189258331
+SentimentLM > -0.0840405 : -0.008920569316227237
+SentimentLM is missing : 2.79296736450873E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+PositivityGI <= 0.14363399999999998 : -0.026809536443988178
+PositivityGI > 0.14363399999999998 : 0.023322175154454523
+PositivityGI is missing : 0.0012146053984302973
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityQDAP <= 0.0051545 : 0.1109676917450714
+PositivityQDAP > 0.0051545 : -0.010072686863453851
+PositivityQDAP is missing : -9.570192534733804E-4
+
+
+Iteration 99
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.002304 : 0.03180089130702472
+PositivityLM > 0.002304 : -0.019282034811339888
+PositivityLM is missing : 9.390701307407408E-4
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.0893115 : -0.08807562390275972
+SentimentLM > -0.0893115 : 0.009605283581493021
+SentimentLM is missing : 3.985592628435561E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.282392 : -2.056239697715763E-4
+NegativityQDAP > 0.282392 : -1.1629932418618274
+NegativityQDAP is missing : -6.801551935101583E-4
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.016064500000000002 : -0.026746525438299328
+PositivityLM > 0.016064500000000002 : 0.03291552787269427
+PositivityLM is missing : -3.524515870371576E-4
+
+
+Iteration 100
+	Class 1 (Section=SECTION3)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.013987 : -0.0303126202118699
+PositivityLM > 0.013987 : 0.027129912382036526
+PositivityLM is missing : -8.753078811504122E-5
+
+
+	Class 2 (Section=SECTION0)
+
+Decision Stump
+
+Classifications
+
+SentimentLM <= -0.0840405 : 0.0710433945908027
+SentimentLM > -0.0840405 : -0.009174987819785851
+SentimentLM is missing : -4.594231467231094E-4
+
+
+	Class 3 (Section=SECTION1)
+
+Decision Stump
+
+Classifications
+
+NegativityQDAP <= 0.27051000000000003 : -5.096096813050418E-4
+NegativityQDAP > 0.27051000000000003 : 1.0943882348454401
+NegativityQDAP is missing : 1.0757942577896532E-4
+
+
+	Class 4 (Section=SECTION2)
+
+Decision Stump
+
+Classifications
+
+PositivityLM <= 0.032564499999999996 : 0.018700428438138475
+PositivityLM > 0.032564499999999996 : -0.04926128326437316
+PositivityLM is missing : 4.110712498543829E-4
+
+Number of performed iterations: 100
+
+
+Time taken to build model: 8.63 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3509               46.0016 %
+Incorrectly Classified Instances      4119               53.9984 %
+Kappa statistic                          0.2325
+Mean absolute error                      0.3258
+Root mean squared error                  0.4054
+Relative absolute error                 89.3947 %
+Root relative squared error             94.9722 %
+Total Number of Instances             7628     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.161    0.055    0.365      0.161    0.224      0.152    0.657     0.293     SECTION3
+                 0.287    0.135    0.376      0.287    0.326      0.169    0.677     0.341     SECTION0
+                 0.664    0.410    0.480      0.664    0.557      0.244    0.684     0.537     SECTION1
+                 0.511    0.171    0.502      0.511    0.507      0.338    0.759     0.527     SECTION2
+Weighted Avg.    0.460    0.231    0.444      0.460    0.439      0.236    0.697     0.451     
+
+=== Confusion Matrix ===
+
+    a    b    c    d   <-- classified as
+  201  263  522  260 |    a = SECTION3
+  118  484  801  283 |    b = SECTION0
+  129  369 1840  434 |    c = SECTION1
+  102  170  668  984 |    d = SECTION2
+
